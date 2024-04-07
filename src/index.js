@@ -4,20 +4,20 @@ import App from "./App";
 import "./styles/index.css";
 import { BrowserRouter } from "react-router-dom";
 
-// // SSR implementation
-// const root = ReactDOM.hydrateRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <BrowserRouter>
-//       <App />
-//     </BrowserRouter>
-//   </React.StrictMode>
-// );
-
-// Normal React implementation
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// SSR implementation
+const root = ReactDOM.hydrateRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
+
+// // Normal React implementation
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+// );
