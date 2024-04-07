@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -6,7 +7,7 @@ export default function Footer() {
             <footer class="main-footer max-x-pad">
                 <div class="footer-head flex justify-between">
                     <div class="contact-us w-50">
-                        <div class="logo"><a href="/">TAPIN</a></div>
+                        <div class="logo"><Link to="/">TAPIN</Link></div>
                         <div class="email-us">
                             <p class="email-title">Email</p>
                             <p class="our-email paragraph">hello@tapin.com</p>
@@ -16,7 +17,7 @@ export default function Footer() {
                             <p class="our-tel paragraph">+228 90 20 23 23</p>
                         </div>
                         <div class="location-link-container">
-                            <a href="#" class="location-link"> Trouver sur Google map </a>
+                            <Link to="#" class="location-link"> Trouver sur Google map </Link>
                         </div>
                     </div>
                     <div class="links-social-description w-50">
@@ -25,16 +26,16 @@ export default function Footer() {
                                 <div class="navigation-title">Navigation</div>
                                 <ul class="navigation-links">
                                     <li class="navigation-link-item">
-                                        <a href="/classic.html" class="">Tapin Classic</a>
+                                        <Link to="/classic" class="">Tapin Classic</Link>
                                     </li>
                                     <li class="navigation-link-item">
-                                        <a href="/pro.html" class="">Tapin Pro</a>
+                                        <Link to="/pro" class="">Tapin Pro</Link>
                                     </li>
                                     <li class="navigation-link-item">
-                                        <a href="/demo.html" class="">Demo & devis Pro</a>
+                                        <Link to="/demo" class="">Demo & devis Pro</Link>
                                     </li>
                                     <li class="navigation-link-item">
-                                        <a href="/about.html" class="">A propos</a>
+                                        <Link to="/about" class="">Link propos</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -42,19 +43,19 @@ export default function Footer() {
                                 <div class="socials-title">Nos actualités</div>
                                 <ul class="socials-links">
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">Facebook</a>
+                                        <Link to="#" class="social-link-item">Facebook</Link>
                                         <img src="./images/icons/arrow-top-right.svg" alt="" />
                                     </li>
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">Instagram</a>
+                                        <Link to="#" class="social-link-item">Instagram</Link>
                                         <img src="./images/icons/arrow-top-right.svg" alt="" />
                                     </li>
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">Youtube</a>
+                                        <Link to="#" class="social-link-item">Youtube</Link>
                                         <img src="./images/icons/arrow-top-right.svg" alt="" />
                                     </li>
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">TikTok</a>
+                                        <Link to="#" class="social-link-item">TikTok</Link>
                                         <img src="./images/icons/arrow-top-right.svg" alt="" />
                                     </li>
                                 </ul>
@@ -78,11 +79,11 @@ export default function Footer() {
                     </div>
                 </div>
                 <div class="flex justify-between padding-top-100">
-                    <div class="paragraph">&COPY; 2023 Tapin Tous droits reservés</div>
+                    <div class="paragraph"> &copy; 2023 Tapin Tous droits reservés</div>
                     <div class="flex">
-                        <div class="paragraph">Mentions Légales</div>
-                        <div class="paragraph ml-15">CGU</div>
-                        <div class="paragraph ml-15">Confidentialité</div>
+                        <Link to='#' class="paragraph">Mentions Légales</Link>
+                        <Link to='#' class="paragraph ml-15">CGU</Link>
+                        <Link to='#' class="paragraph ml-15">Confidentialité</Link>
                     </div>
                 </div>
             </footer>

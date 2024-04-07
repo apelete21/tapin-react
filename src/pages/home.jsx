@@ -38,7 +38,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="virtual-card-img">
-                        <img src="./images/img1.png" alt="" />
+                        <img src={require("../images/img1.png")} alt="" />
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <img className="card-demo-img" src="images/bg3.png" alt="" srcset="" />
+                    <img className="card-demo-img" src={require("../images/bg3.png")} alt="" srcset="" />
                     <div className="row sharing-methods-wrapper text-white">
                         <div className="col2">
                             <div className="square-icon-wrapper">
@@ -132,7 +132,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="img-wrapper">
-                        <img className="linkaard-benefits-img" src="images/bg4.png" alt="" srcset="" />
+                        <img className="linkaard-benefits-img" src={require("../images/bg4.png")} alt="" srcset="" />
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
                     </div>
 
                     <div className="img-wrapper">
-                        <img src="./images/img3.png" alt="" />
+                        <img src={require("../images/img3.png")} alt="" />
 
                         <div className="selection-group">
                             <p className="main-paragraph dark-font  w-80">
@@ -225,7 +225,7 @@ export default function Home() {
 
 
                 <div className="img-illustrator w-100 h-100">
-                    <img src="images/img4.png" alt="" />
+                    <img src={require("../images/img4.png")} alt="" />
                 </div>
 
             </div>

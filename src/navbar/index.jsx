@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -6,16 +7,16 @@ export default function Navbar() {
             <nav className="main-navbar max-x-pad">
                 <div className="navbar-wrapper">
                     <div className="navbar-links-group">
-                        <a href="/" className="nav-logo">TAPIN</a>
+                        <Link to="/" className="nav-logo">TAPIN</Link>
                         <div className="nav-links">
-                            <a href="/classNameic.html" className="nav-link">Nos services</a>
-                            <a href="/pro.html" className="nav-link">Démo & Devis</a>
-                            <a href="/about.html" className="nav-link">A propos</a>
+                            <Link to="/classic" className="nav-link">Nos services</Link>
+                            <Link to="/pro" className="nav-link">Démo & Devis</Link>
+                            <Link to="/about" className="nav-link">A propos</Link>
                         </div>
                     </div>
                     <div className="navbar-btn-group">
-                        <a href="/demo.html" className="nav-link">Commander</a>
-                        <a href="#" className="nav-link btn secondary-btn">Connexion</a>
+                        <Link to="/demo" className="nav-link">Commander</Link>
+                        <Link to="#" className="nav-link btn secondary-btn">Connexion</Link>
                     </div>
                 </div>
             </nav>

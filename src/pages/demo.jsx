@@ -14,7 +14,7 @@ export default function Demo() {
                                 de visite réinventée
                             </h2>
                         </div>
-                        <div className="w-80">
+                        <div className="flex">
                             <p className="main-paragraph text-center">
                                 Explorez une nouvelle dimension d'interactions professionnelles, conçue pour simplifier et amplifier vos opportunités
                             </p>
@@ -22,8 +22,8 @@ export default function Demo() {
                     </div>
 
                     <div className="flex justify-center gap-40">
-                        <img src="images/demo/img1.png" alt="" />
-                        <img src="images/demo/img2.png" alt="" />
+                        <img src={require("../images/demo/img1.png")} alt="" />
+                        <img src={require("../images/demo/img2.png")} alt="" />
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ export default function Demo() {
                                 <div className=" h-100 flex flex-col content-between items-between">
                                     <div className="card-head flex align-center relative">
                                         <div className="circle">
-                                            <img src="images/demo/profile.png" alt="profile photo" />
+                                            <img src={require("../images/demo/profile.png")} alt="profile photo" />
                                         </div>
                                         <span className="profile-info flex justify-center align-center">
                                             24/6
@@ -149,9 +149,10 @@ export default function Demo() {
                                         <div className="accordion-title">
                                             Comment sont protégés mes données ?
                                         </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
+                                        <span className="accordion-arrow">
+                                            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
+                                            </svg>
                                         </span>
                                     </div>
                                 </div>
