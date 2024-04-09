@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Head() {
+export default function Header() {
     return (
-        <Head>
+        <>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +12,6 @@ export default function Head() {
                 rel="stylesheet"
             />
             <title>TAPIN</title>
-        </Head>
+        </>
     )
 }

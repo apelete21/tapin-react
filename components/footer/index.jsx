@@ -34,7 +34,7 @@ export default function Footer() {
                                         <a href="/demo" class="">Demo & devis Pro</a>
                                     </li>
                                     <li class="navigation-link-item">
-                                        <a href="/about" class="">a propos</a>
+                                        <a href="/about" class="">A propos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -44,28 +44,28 @@ export default function Footer() {
                                     <li class="social-link-item flex">
                                         <a href="#" class="social-link-item">Facebook</a>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fill-opacity="0.65" />
+                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
 
                                     </li>
                                     <li class="social-link-item flex">
                                         <a href="#" class="social-link-item">Instagram</a>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fill-opacity="0.65" />
+                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
 
                                     </li>
                                     <li class="social-link-item flex">
                                         <a href="#" class="social-link-item">Youtube</a>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fill-opacity="0.65" />
+                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
 
                                     </li>
                                     <li class="social-link-item flex">
                                         <a href="#" class="social-link-item">TikTok</a>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fill-opacity="0.65" />
+                                            <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
 
                                     </li>

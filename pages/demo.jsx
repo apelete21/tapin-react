@@ -22,8 +22,8 @@ export default function Demo() {
                     </div>
 
                     <div className="flex justify-center gap-40">
-                        <img src={require("../images/demo/img1.png")} alt="" />
-                        <img src={require("../images/demo/img2.png")} alt="" />
+                        <img src={("./images/demo/img1.png")} alt="" />
+                        <img src={("./images/demo/img2.png")} alt="" />
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ export default function Demo() {
                                 <div className=" h-100 flex flex-col content-between items-between">
                                     <div className="card-head flex align-center relative">
                                         <div className="circle">
-                                            <img src={require("../images/demo/profile.png")} alt="profile photo" />
+                                            <img src={("./images/demo/profile.png")} alt="profile photo" />
                                         </div>
                                         <span className="profile-info flex justify-center align-center">
                                             24/6

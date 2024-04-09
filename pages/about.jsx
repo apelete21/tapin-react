@@ -25,7 +25,7 @@ export default function About() {
                       </div>
 
                       <div className="about-intro-boxed-data-wrapper">
-                          <img src={require("../images/about/img1.png")} alt="" />
+                          <img src={("./images/about/img1.png")} alt="" />
                       </div>
                   </div>
               </div>
@@ -44,7 +44,7 @@ export default function About() {
                       </div>
 
                       <div className="mission-img-wrapper w-100">
-                          <img className="w-100" src={require("../images/about/img-3.png")} alt="" />
+                          <img className="w-100" src={("./images/about/img-3.png")} alt="" />
                       </div>
                   </div>
 
@@ -68,7 +68,7 @@ export default function About() {
 
 
                       <div className="flex justify-center fadeIn-img-wrapper">
-                          <img src={require("../images/about/img-4.png")} alt="" className="w-100" />
+                          <img src={("./images/about/img-4.png")} alt="" className="w-100" />
                       </div>
                   </div>
               </div>
@@ -110,7 +110,7 @@ export default function About() {
 
                       <div className="features-wrapper ">
                           <div className="features-box">
-                              <img src={require("../images/card-options.png")} className="mb-10" alt="" />
+                              <img src={("./images/card-options.png")} className="mb-10" alt="" />
                               <h5 className="paragraph text-center bold">
                                   Add up to 5 cardholders
                               </h5>
@@ -120,7 +120,7 @@ export default function About() {
                               </p>
                           </div>
                           <div className="features-box purple-box">
-                              <img src={require("../images/card-options-2.png")} className="mb-10" alt="" />
+                              <img src={("./images/card-options-2.png")} className="mb-10" alt="" />
                               <h5 className="paragraph text-center bold">
                                   Add up to 5 cardholders
                               </h5>
@@ -130,7 +130,7 @@ export default function About() {
                               </p>
                           </div>
                           <div className="features-box">
-                              <img src={require("../images/card-options-3.png")} className="mb-10" alt="" />
+                              <img src={("./images/card-options-3.png")} className="mb-10" alt="" />
                               <h5 className="paragraph text-center bold">
                                   Add up to 5 cardholders
                               </h5>
@@ -164,10 +164,10 @@ export default function About() {
 
                       <div className="img-wrapper flex">
                           <div className="grid-col-6">
-                              <img src={require("../images/about/Vector.png")} className="config-preview" alt="" />
+                              <img src={("./images/about/Vector.png")} className="config-preview" alt="" />
                           </div>
                           <div className="grid-col-6">
-                              <img src={require("../images/about/Vector-1.png")} className="config-preview" alt="" />
+                              <img src={("./images/about/Vector-1.png")} className="config-preview" alt="" />
                           </div>
                       </div>
                   </div>

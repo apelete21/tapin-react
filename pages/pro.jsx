@@ -33,16 +33,16 @@ export default function Pro() {
                     <div className="cards-container">
 
                         <div className="card-wrapper">
-                            <img className="show-case-img" src={require("../images/classic-cards/Group 2.png")} alt="" />
+                            <img className="show-case-img" src={"/images/classic-cards/Group 2.png"} alt="" />
                         </div>
                         <div className="card-wrapper">
-                            <img className="show-case-img" src={require("../images/classic-cards/Group 4.png")} alt="" />
+                            <img className="show-case-img" src={"/images/classic-cards/Group 4.png"} alt="" />
                         </div>
                         <div className="card-wrapper">
-                            <img className="show-case-img" src={require("../images/classic-cards/Group 5.png")} alt="" />
+                            <img className="show-case-img" src={"/images/classic-cards/Group 5.png"} alt="" />
                         </div>
                         <div className="card-wrapper">
-                            <img className="show-case-img" src={require("../images/classic-cards/Group 7.png")} alt="" />
+                            <img className="show-case-img" src={"/images/classic-cards/Group 7.png"} alt="" />
                         </div>
                         <div className="card-wrapper">
                             <img className="show-case-img" src={require("../images/classic-cards/image 78.png")} alt="" />
@@ -73,7 +73,7 @@ export default function Pro() {
                         <div className="flex pro-app-feature-wrapper flex-col w-25 ">
                             <div className="type-option pro-app-feature-box bg-little-white rounded flex flex-col items-center justify-center h-45" >
                                 <div className="img-wrapper">
-                                    <img src={require("../images/interaction1.png")} alt="" className="w-100" />
+                                    <img src={("./images/interaction1.png")} alt="" className="w-100" />
                                 </div>
                                 <p className="main-paragraph text-center">
                                     Explorez une nouvelle dimension d'interactions
@@ -81,7 +81,7 @@ export default function Pro() {
                             </div>
                             <div className="type-option pro-app-feature-box bg-little-white rounded flex flex-col items-center justify-center h-45" >
                                 <div className="img-wrapper">
-                                    <img src={require("../images/interaction1.png")} alt="" className="w-100" />
+                                    <img src={("./images/interaction1.png")} alt="" className="w-100" />
                                 </div>
                                 <p className="main-paragraph text-center">
                                     Explorez une nouvelle dimension d'interactions
@@ -91,13 +91,13 @@ export default function Pro() {
 
 
                         <div className="-mx-70 relative index-5">
-                            <img src={require("../images/iphone-card.png")} alt="" />
+                            <img src={("./images/iphone-card.png")} alt="" />
                         </div>
 
                         <div className="flex pro-app-feature-wrapper flex-col w-25 gap-10">
                             <div className="type-option pro-app-feature-box bg-little-white rounded flex flex-col items-center justify-center h-45" >
                                 <div className="img-wrapper">
-                                    <img src={require("../images/interaction1.png")} alt="" className="w-100" />
+                                    <img src={("../images/interaction1.png")} alt="" className="w-100" />
                                 </div>
                                 <p className="main-paragraph text-center">
                                     Explorez une nouvelle dimension d'interactions
@@ -105,7 +105,7 @@ export default function Pro() {
                             </div>
                             <div className="type-option pro-app-feature-box bg-little-white rounded flex flex-col items-center justify-center h-45" >
                                 <div className="img-wrapper">
-                                    <img src={require("../images/interaction1.png")} alt="" className="w-100" />
+                                    <img src={("./images/interaction1.png")} alt="" className="w-100" />
                                 </div>
                                 <p className="main-paragraph text-center">
                                     Explorez une nouvelle dimension d'interactions
@@ -133,9 +133,9 @@ export default function Pro() {
                     </div>
 
                     <div className="empty-cards flex justify-center gap-10 max-y-pad">
-                        <img src={require("../images/empty-card.png")} alt="" />
-                        <img src={require("../images/empty-card.png")} alt="" />
-                        <img src={require("../images/empty-card.png")} alt="" />
+                        <img src={("/images/empty-card.png")} alt="" />
+                        <img src={("/images/empty-card.png")} alt="" />
+                        <img src={("/images/empty-card.png")} alt="" />
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@ export default function Pro() {
                     </div>
                 </div>
                 <div className="">
-                    <img src={require("../images/iphone-preview.png")} alt="" className="w-100" />
+                    <img src={("./images/iphone-preview.png")} alt="" className="w-100" />
                 </div>
 
 
@@ -195,9 +195,9 @@ export default function Pro() {
                                     <div className="card-feature">
                                         <div className="item-icon">
                                             <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6454 25.7129C35.3283 27.5342 37.2083 30.0017 37.2083 33.2917V39.1667H45.0417V33.2917C45.0417 29.0225 38.0504 26.4962 32.6454 25.7129Z" fill="#C3AEF8" />
+                                                <path fill-rule="evenodd" clipRule="evenodd" d="M32.6454 25.7129C35.3283 27.5342 37.2083 30.0017 37.2083 33.2917V39.1667H45.0417V33.2917C45.0417 29.0225 38.0504 26.4962 32.6454 25.7129Z" fill="#C3AEF8" />
                                                 <path d="M17.625 23.5C21.9512 23.5 25.4583 19.9929 25.4583 15.6667C25.4583 11.3404 21.9512 7.83334 17.625 7.83334C13.2988 7.83334 9.79167 11.3404 9.79167 15.6667C9.79167 19.9929 13.2988 23.5 17.625 23.5Z" fill="#C3AEF8" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.375 23.5C33.7029 23.5 37.2083 19.9946 37.2083 15.6667C37.2083 11.3388 33.7029 7.83334 29.375 7.83334C28.4546 7.83334 27.5929 8.02917 26.7704 8.30334C28.4556 10.3874 29.3749 12.9865 29.3749 15.6667C29.3749 18.3468 28.4556 20.9459 26.7704 23.03C27.5929 23.3042 28.4546 23.5 29.375 23.5ZM17.625 25.4583C12.3962 25.4583 1.95833 28.0825 1.95833 33.2917V39.1667H33.2917V33.2917C33.2917 28.0825 22.8537 25.4583 17.625 25.4583Z" fill="#C3AEF8" />
+                                                <path fillRule="evenodd" clipRule="evenodd" d="M29.375 23.5C33.7029 23.5 37.2083 19.9946 37.2083 15.6667C37.2083 11.3388 33.7029 7.83334 29.375 7.83334C28.4546 7.83334 27.5929 8.02917 26.7704 8.30334C28.4556 10.3874 29.3749 12.9865 29.3749 15.6667C29.3749 18.3468 28.4556 20.9459 26.7704 23.03C27.5929 23.3042 28.4546 23.5 29.375 23.5ZM17.625 25.4583C12.3962 25.4583 1.95833 28.0825 1.95833 33.2917V39.1667H33.2917V33.2917C33.2917 28.0825 22.8537 25.4583 17.625 25.4583Z" fill="#C3AEF8" />
                                             </svg>
 
                                         </div>
@@ -208,7 +208,7 @@ export default function Pro() {
                                     <div className="card-feature">
                                         <div className="item-icon">
                                             <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.79168 15.6667L19.5833 31.3333M36.6639 40.1458C39.5859 35.0849 41.1242 29.3439 41.1242 23.5C41.1242 17.6561 39.5859 11.9151 36.6639 6.85416M28.1843 35.25C30.2469 31.6775 31.3327 27.6251 31.3327 23.5C31.3327 19.3749 30.2469 15.3224 28.1843 11.75M19.4423 31.3333C20.8174 28.9517 21.5413 26.2501 21.5413 23.5C21.5413 20.7499 20.8174 18.0483 19.4423 15.6667M9.93268 31.3333C8.55764 28.9517 7.83374 26.2501 7.83374 23.5C7.83374 20.7499 8.55764 18.0483 9.93268 15.6667" stroke="#C3AEF8" stroke-width="4" stroke-linecap="round" />
+                                                <path d="M9.79168 15.6667L19.5833 31.3333M36.6639 40.1458C39.5859 35.0849 41.1242 29.3439 41.1242 23.5C41.1242 17.6561 39.5859 11.9151 36.6639 6.85416M28.1843 35.25C30.2469 31.6775 31.3327 27.6251 31.3327 23.5C31.3327 19.3749 30.2469 15.3224 28.1843 11.75M19.4423 31.3333C20.8174 28.9517 21.5413 26.2501 21.5413 23.5C21.5413 20.7499 20.8174 18.0483 19.4423 15.6667M9.93268 31.3333C8.55764 28.9517 7.83374 26.2501 7.83374 23.5C7.83374 20.7499 8.55764 18.0483 9.93268 15.6667" stroke="#C3AEF8" strokeWidth="4" strokeLinecap="round" />
                                             </svg>
 
                                         </div>
@@ -234,7 +234,7 @@ export default function Pro() {
                         <div className="card-preview w-25">
                             <div className="w-100">
                                 <img
-                                    src={require("../images/classic-cards/image 78.png")}
+                                    src={("./images/classic-cards/image 78.png")}
                                     className="w-100 h-100"
                                     alt=""
                                 />
@@ -257,7 +257,7 @@ export default function Pro() {
                         <div className="out-link">
                             <div className="link-icon">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_249_232)">
+                                    <g clipPath="url(#clip0_249_232)">
                                         <path d="M13.3884 9.45999C13.1688 9.46157 12.9517 9.50698 12.7499 9.59355C12.5481 9.68011 12.3656 9.8061 12.2131 9.96412C12.0606 10.1221 11.9411 10.309 11.8618 10.5138C11.7824 10.7186 11.7448 10.9371 11.751 11.1566C11.7572 11.3761 11.8072 11.5922 11.898 11.7922C11.9888 11.9921 12.1186 12.172 12.2798 12.3211C12.441 12.4702 12.6303 12.5857 12.8367 12.6607C13.0431 12.7357 13.2624 12.7688 13.4818 12.7579L29.3399 12.3161L9.54601 32.11C9.23657 32.4195 9.06273 32.8392 9.06274 33.2768C9.06273 33.7144 9.23658 34.1341 9.54601 34.4435C9.85545 34.7529 10.2751 34.9268 10.7127 34.9268C11.1503 34.9268 11.57 34.7529 11.8795 34.4435L31.6765 14.6465L31.2347 30.5108C31.2238 30.7302 31.2569 30.9495 31.3319 31.1559C31.4069 31.3623 31.5224 31.5516 31.6715 31.7128C31.8207 31.874 32.0005 32.0038 32.2004 32.0946C32.4004 32.1854 32.6165 32.2354 32.836 32.2416C33.0555 32.2478 33.2741 32.2102 33.4788 32.1308C33.6836 32.0515 33.8705 31.932 34.0285 31.7795C34.1865 31.627 34.3125 31.4445 34.3991 31.2427C34.4856 31.0409 34.531 30.8238 34.5326 30.6042L35.074 11.1774C35.0883 10.695 34.9428 10.2214 34.6602 9.83023C34.5284 9.62552 34.3531 9.45237 34.1468 9.3231C33.7588 9.04701 33.2912 8.905 32.8152 8.91863L13.3884 9.45999Z" fill="#75808A" />
                                     </g>
                                     <defs>
@@ -269,7 +269,7 @@ export default function Pro() {
                             </div>
                         </div>
                         <div className="card-diagonal">
-                            <img src={require("../images/card-diagonal-blue.png")} alt="" />
+                            <img src={("./images/card-diagonal-blue.png")} alt="" />
                         </div>
                     </div>
                     <div className="listed-card card-services-details flex">
@@ -287,7 +287,7 @@ export default function Pro() {
                         <div className="out-link">
                             <div className="link-icon">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_249_232)">
+                                    <g clipPath="url(#clip0_249_232)">
                                         <path d="M13.3884 9.45999C13.1688 9.46157 12.9517 9.50698 12.7499 9.59355C12.5481 9.68011 12.3656 9.8061 12.2131 9.96412C12.0606 10.1221 11.9411 10.309 11.8618 10.5138C11.7824 10.7186 11.7448 10.9371 11.751 11.1566C11.7572 11.3761 11.8072 11.5922 11.898 11.7922C11.9888 11.9921 12.1186 12.172 12.2798 12.3211C12.441 12.4702 12.6303 12.5857 12.8367 12.6607C13.0431 12.7357 13.2624 12.7688 13.4818 12.7579L29.3399 12.3161L9.54601 32.11C9.23657 32.4195 9.06273 32.8392 9.06274 33.2768C9.06273 33.7144 9.23658 34.1341 9.54601 34.4435C9.85545 34.7529 10.2751 34.9268 10.7127 34.9268C11.1503 34.9268 11.57 34.7529 11.8795 34.4435L31.6765 14.6465L31.2347 30.5108C31.2238 30.7302 31.2569 30.9495 31.3319 31.1559C31.4069 31.3623 31.5224 31.5516 31.6715 31.7128C31.8207 31.874 32.0005 32.0038 32.2004 32.0946C32.4004 32.1854 32.6165 32.2354 32.836 32.2416C33.0555 32.2478 33.2741 32.2102 33.4788 32.1308C33.6836 32.0515 33.8705 31.932 34.0285 31.7795C34.1865 31.627 34.3125 31.4445 34.3991 31.2427C34.4856 31.0409 34.531 30.8238 34.5326 30.6042L35.074 11.1774C35.0883 10.695 34.9428 10.2214 34.6602 9.83023C34.5284 9.62552 34.3531 9.45237 34.1468 9.3231C33.7588 9.04701 33.2912 8.905 32.8152 8.91863L13.3884 9.45999Z" fill="#75808A" />
                                     </g>
                                     <defs>
@@ -299,7 +299,7 @@ export default function Pro() {
                             </div>
                         </div>
                         <div className="card-diagonal">
-                            <img src={require("../images/card-diagonal.png")} alt="" />
+                            <img src={("./images/card-diagonal.png")} alt="" />
                         </div>
                     </div>
                 </div>
@@ -326,19 +326,19 @@ export default function Pro() {
 
                 <div className="features-wrapper max-x-pad">
                     <div className="features-box">
-                        <img src={require("../images/card-options.png")} className="mb-10" alt="" />
+                        <img src={("./images/card-options.png")} className="mb-10" alt="" />
                         <div className="paragraph text-center bold">
                             Add up to 5 cardholders
                         </div>
                     </div>
                     <div className="features-box">
-                        <img src={require("../images/card-options-2.png")} className="mb-10" alt="" />
+                        <img src={("./images/card-options-2.png")} className="mb-10" alt="" />
                         <div className="paragraph text-center bold">
                             Add up to 5 cardholders
                         </div>
                     </div>
                     <div className="features-box">
-                        <img src={require("../images/card-options-3.png")} className="mb-10" alt="" />
+                        <img src={("./images/card-options-3.png")} className="mb-10" alt="" />
                         <div className="paragraph text-center bold">
                             Add up to 5 cardholders
                         </div>
@@ -378,7 +378,7 @@ export default function Pro() {
                 </div>
 
                 <div className="img-wrapper">
-                    <img src={require("../images/petalcard.png")} className="config-preview" alt="" />
+                    <img src={("./images/petalcard.png")} className="config-preview" alt="" />
                 </div>
             </div>
 
@@ -402,7 +402,7 @@ export default function Pro() {
                 </div>
 
                 <div className="switch-card  mb-10">
-                    <img src={require("../images/classic-cards/image 78.png")} className="" alt="" />
+                    <img src={("./images/classic-cards/image 78.png")} className="" alt="" />
                 </div>
                 <div className="flex justify-center">
                     <a href="#" className="discoverLink">Découvrir</a>
