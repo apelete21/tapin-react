@@ -254,8 +254,9 @@ nav .nav-link {
 }
 
 .about-intro .text-head {
-  font-size: 3.475rem;
-  letter-spacing: -0.19rem;
+    font-size: 3.475rem;
+    letter-spacing: -0.19rem;
+    line-height: 3.475rem;
 }
 
 .mission-section .text-head {
@@ -2014,8 +2015,36 @@ input:focus {
     flex-direction: column;
 }
 
-
 /* Demo */
+
+/* About */
+
+.mission-section .text-head {
+    font-size: 2.275rem;
+    line-height: 2.275rem;
+    width: 100%;
+}
+
+.vision-section .fadeIn-img-wrapper img {
+    max-width: unset;
+    border-radius: 15px;
+}
+
+.vision-transition-section .intro-title-group {
+    width: 100%;
+}
+
+.product-features .intro-title-group.col-2-title {
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+.product-features .intro-title-group.col-2-title {
+    max-width: unset;
+    flex-direction: column;
+}
+
+/* About */
 
   /* Nav styles */
   nav .navbar-wrapper {
