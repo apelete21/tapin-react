@@ -1080,7 +1080,7 @@ nav .nav-link {
 .linkaard-pro-intro {
   background-image: url(../images/bg-pro.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position-x: right;
 }
 
@@ -1919,6 +1919,33 @@ input:focus {
 }
 
 /* classic */
+
+/* Pro */
+
+.pro-app-feature-wrapper-container {
+    flex-direction: column;
+    padding: 0;
+}
+
+.pro-app-feature-wrapper-container div,
+.pro-app-feature-wrapper-container div img {
+    width: 100%;
+}
+
+.pro-app-features .pro-app-feature-wrapper {
+    gap: 15px;
+    flex-direction: row;
+    width: 100%;
+    /* margin: 0px 0vw; */
+}
+
+.pro-cards-use-display div {
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 15px !important;
+}
+
+/* Pro */
 
   /* Nav styles */
   nav .navbar-wrapper {

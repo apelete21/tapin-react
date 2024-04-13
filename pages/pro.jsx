@@ -69,7 +69,7 @@ export default function Pro() {
                         </div>
                     </div>
 
-                    <div className="flex max-x-pad justify-center align-center">
+                    <div className="flex pro-app-feature-wrapper-container max-x-pad justify-center align-center">
                         <div className="flex pro-app-feature-wrapper flex-col w-25 ">
                             <div className="type-option pro-app-feature-box bg-little-white rounded flex flex-col items-center justify-center h-45" >
                                 <div className="img-wrapper">
@@ -116,7 +116,7 @@ export default function Pro() {
 
                 </div>
             </div>
-            <div className=" pro-cards-use-display sectionsection-wrapper inner-section inner-section-padding bg-black">
+            <div className=" pro-cards-use-display section section-wrapper inner-section inner-section-padding bg-black">
 
                 <div className="flex justify-between max-x-pad">
 
