@@ -76,7 +76,9 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <img className="card-demo-img" src={("./images/bg3.png")} alt="" srcset="" />
+                    <div className='demo-img-container'>
+                        <img className="card-demo-img" src={("./images/bg3.png")} alt="" srcset="" />
+                    </div>
                     <div className="row sharing-methods-wrapper text-white">
                         <div className="col2">
                             <div className="square-icon-wrapper">

@@ -20,7 +20,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div class="links-social-description w-50">
-                        <div class="flex justify-between">
+                        <div class="links-container flex justify-between">
                             <div class="navigation w-50">
                                 <div class="navigation-title">Navigation</div>
                                 <ul class="navigation-links">
@@ -89,9 +89,9 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-between padding-top-100">
+                <div class="copyright flex justify-between padding-top-100">
                     <div class="paragraph"> &copy; 2023 Tapin Tous droits reservés</div>
-                    <div class="flex">
+                    <div class="copy-links flex">
                         <a href='#' class="paragraph">Mentions Légales</a>
                         <a href='#' class="paragraph ml-15">CGU</a>
                         <a href='#' class="paragraph ml-15">Confidentialité</a>
