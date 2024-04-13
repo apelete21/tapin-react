@@ -1947,6 +1947,76 @@ input:focus {
 
 /* Pro */
 
+/* Demo */
+
+.demo-imgs {
+  gap: unset;
+  justify-content: space-between;
+}
+
+.demo-imgs img {
+  width: 48%;
+}
+
+.demo-intro .intro-title-group div {
+   width: 100%;
+}
+
+.quotation-wrapper {
+  flex-direction: column;
+}
+
+.quotation-wrapper .card-head {
+
+}
+
+.profile-info {
+    height: 90px;
+    color: var(--light-white);
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0.22);
+    position: static;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.quotation-wrapper .card-head {
+    justify-content: space-between;
+}
+
+.quotation-form-aside .text-intro {
+    color: #c3aef8;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    margin-top: 40px;
+}
+
+.demo-request-section .text-container .text-head {
+    width: 100%;
+}
+
+.demo-request-section .white-p {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.faq-intro {
+  flex-direction: column;
+}
+
+.col-2 span {
+    width: unset;
+}
+
+.faq-elements {
+    flex-direction: column;
+}
+
+
+/* Demo */
+
   /* Nav styles */
   nav .navbar-wrapper {
     display: flex;

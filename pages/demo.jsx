@@ -21,7 +21,7 @@ export default function Demo() {
                         </div>
                     </div>
 
-                    <div className="flex justify-center gap-40">
+                    <div className="demo-imgs flex justify-center gap-40">
                         <img src={("./images/demo/img1.png")} alt="" />
                         <img src={("./images/demo/img2.png")} alt="" />
                     </div>
@@ -141,7 +141,7 @@ export default function Demo() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex gap-20 max-y-pad">
+                    <div className="faq-elements flex gap-20 max-y-pad">
                         <div className="acc-col">
                             <div className="accordions-container flex flex-col">
                                 <div className="accordion-box">
