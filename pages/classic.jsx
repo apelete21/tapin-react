@@ -20,7 +20,7 @@ export default function Classic() {
                 </div>
             </div>
 
-            <div className="classic-cards-showcase max-x-pad inner-section-padding inner-section sm-bottom-padding">
+            <div className="classic-cards-showcase max-x-pad max-y-pad inner-section sm-bottom-padding">
                 <div className="text-container">
                     <p className="main-paragraph">Pour ceux qui veulent bien</p>
                 </div>
@@ -84,7 +84,7 @@ export default function Classic() {
 
 
 
-            <div className="section-wrapper inner-section-padding inner-section sm-bottom-padding">
+            <div className="section-wrapper max-y-pad inner-section sm-bottom-padding">
                 <div className="section-content-wrapper">
                     <div className="md-text-box">
                         <h2 className="text-head text-center">
@@ -103,7 +103,7 @@ export default function Classic() {
                 </div>
             </div>
 
-            <div className="share-options section-wrapper inner-section inner-section-padding section-y-pad">
+            <div className="share-options max-y-pad section-wrapper inner-section section-y-pad">
 
                 <div className="text-center sm-text-box">
                     <h2 className="h3-subtitle">
@@ -131,7 +131,7 @@ export default function Classic() {
 
             </div>
 
-            <div className="section-wrapper inner-section inner-section-padding card-comparator">
+            <div className="section-wrapper inner-section card-comparator">
                 <div className="listed-card-wrapper">
                     <div className="text-container">
                         <div className="text-head text-center">Vos Données, Notre Engagement</div>
@@ -163,7 +163,7 @@ export default function Classic() {
                                             <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fillRule="evenodd" clipRule="evenodd" d="M32.6454 25.7129C35.3283 27.5342 37.2083 30.0017 37.2083 33.2917V39.1667H45.0417V33.2917C45.0417 29.0225 38.0504 26.4962 32.6454 25.7129Z" fill="#C3AEF8" />
                                                 <path d="M17.625 23.5C21.9512 23.5 25.4583 19.9929 25.4583 15.6667C25.4583 11.3404 21.9512 7.83334 17.625 7.83334C13.2988 7.83334 9.79167 11.3404 9.79167 15.6667C9.79167 19.9929 13.2988 23.5 17.625 23.5Z" fill="#C3AEF8" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.375 23.5C33.7029 23.5 37.2083 19.9946 37.2083 15.6667C37.2083 11.3388 33.7029 7.83334 29.375 7.83334C28.4546 7.83334 27.5929 8.02917 26.7704 8.30334C28.4556 10.3874 29.3749 12.9865 29.3749 15.6667C29.3749 18.3468 28.4556 20.9459 26.7704 23.03C27.5929 23.3042 28.4546 23.5 29.375 23.5ZM17.625 25.4583C12.3962 25.4583 1.95833 28.0825 1.95833 33.2917V39.1667H33.2917V33.2917C33.2917 28.0825 22.8537 25.4583 17.625 25.4583Z" fill="#C3AEF8" />
+                                                <path fillRule="evenodd" clipRule="evenodd" d="M29.375 23.5C33.7029 23.5 37.2083 19.9946 37.2083 15.6667C37.2083 11.3388 33.7029 7.83334 29.375 7.83334C28.4546 7.83334 27.5929 8.02917 26.7704 8.30334C28.4556 10.3874 29.3749 12.9865 29.3749 15.6667C29.3749 18.3468 28.4556 20.9459 26.7704 23.03C27.5929 23.3042 28.4546 23.5 29.375 23.5ZM17.625 25.4583C12.3962 25.4583 1.95833 28.0825 1.95833 33.2917V39.1667H33.2917V33.2917C33.2917 28.0825 22.8537 25.4583 17.625 25.4583Z" fill="#C3AEF8" />
                                             </svg>
 
                                         </div>
@@ -178,9 +178,9 @@ export default function Classic() {
                                             </svg>
 
                                         </div>
-                                        <div className="item-text paragraph text-center">
+                                        <p className="item-text paragraph text-center">
                                             Live group sessions. Minus the tabs.
-                                        </div>
+                                        </p>
                                     </div>
                                     <div className="card-feature">
                                         <div className="item-icon">
@@ -189,9 +189,9 @@ export default function Classic() {
                                             </svg>
 
                                         </div>
-                                        <div className="item-text paragraph text-center">
+                                        <p className="item-text paragraph text-center">
                                             Live group sessions. Minus the tabs.
-                                        </div>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -272,7 +272,7 @@ export default function Classic() {
 
 
 
-            <div className="section-wrapper inner-section inner-section-padding card-preview">
+            <div className="section-wrapper inner-section card-preview">
 
                 <div className="intro-title-group">
 
@@ -297,7 +297,7 @@ export default function Classic() {
 
 
 
-            <div className="section-wrapper inner-section inner-section-padding classic-feature-02">
+            <div className="section-wrapper inner-section classic-feature-02">
 
                 <div className="intro-title-group text-center">
                     <div className="sm-text-box">
@@ -373,7 +373,7 @@ export default function Classic() {
             </div>
 
 
-            <div className="section-wrapper classic-feature-03 inner-section inner-section-padding">
+            <div className="section-wrapper classic-feature-03 inner-section">
 
                 <div className="intro-title-group text-center">
                     <div className="sm-text-box">

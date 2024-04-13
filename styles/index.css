@@ -178,7 +178,7 @@ nav .nav-logo {
 }
 
 .section-y-pad {
-  padding-inline: 5vw;
+  padding-block: 100px;
 }
 
 nav .nav-link {
@@ -1107,6 +1107,10 @@ nav .nav-link {
   background-color: rgb(0, 0, 0);
 }
 
+.card-preview {
+  margin-block: 80px;
+}
+
 .demo-img-container {
     width: 100vw;
     margin: 0; 
@@ -1688,6 +1692,7 @@ input:focus {
     flex-direction: column;
     margin-top: 160px;
 }
+
 .card-choices .selection-group {
     padding-left: 0px;
 }
@@ -1712,7 +1717,208 @@ input:focus {
   color: var(--gray-dark);
 }
 
+/* home */
 
+/* classic */
+.w-35 {
+    width: 100%;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.home-intro .section-container {
+    height: calc(100vh - 180px);
+}
+.classic-models .text-container {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.classic-cards-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8%;
+    margin-block: 80px;
+}
+.cards-container {
+    display: grid;
+    width: 100%;
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 50%);
+    row-gap: 35px;
+}
+.share-options .options-container {
+    display: flex;
+    margin-top: 5rem;
+    gap: 1.2rem;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.options-container .option-element .option-img {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-container .option-element .option-img img {
+      width: 100%;
+}
+
+.listed-card-wrapper {
+  margin-block: 100px;
+}
+
+.listed-card-wrapper div:nth-child(1) *,
+.listed-card-wrapper div:nth-child(2) * {
+  width: unset;
+}
+
+.listed-card-wrapper div.w-100 img.w-100 {
+  width: 100%;
+}
+.listed-card-wrapper .listed-card {
+    background-color: white;
+    justify-content: space-between;
+    margin-inline: 0vw;
+    padding: 20px 22px;
+    border-radius: 30px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.listed-card .card-feature-box {
+    gap: 10px;
+    justify-content: space-between;
+}
+.listed-card .card-feature-box .card-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.listed-card .active-card-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 90px;
+}
+
+.listed-card .card-composition {
+  text-align: right; 
+}
+
+.listed-card .card-diagonal {
+  text-align: right; 
+}
+
+.card-comparator {
+    /* background-color: var(--clay); */
+    padding-block: 20px;
+    margin-bottom: 100px;
+}
+
+.card-preview .intro-title-group {
+    width: 100%;
+    margin-inline: auto;
+    margin-bottom: 5rem;
+}
+
+.empty-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 44%);
+    margin-bottom: 50px;
+}
+.empty-cards img {
+    width: 100%;
+}
+
+.classic-feature-02 .features-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.classic-feature-02 .features-wrapper .features-box img {
+  width: 100%;
+}
+
+.classic-feature-02 .bottom-p {
+    font-size: 20px;
+    text-align: center;
+    color: var(--dark-700);
+    max-width: 100%;
+    margin-bottom: 80px;
+    font-weight: 600;
+}
+
+.classic-feature-02 .features-wrapper .features-box {
+    padding: 30px;
+    background-color: var(--clay);
+    border-radius: 12px;
+}
+
+.intro-title-group .main-paragraph {
+    /* margin: 0; */
+    width: 100%;
+}
+
+.md-title-box {
+    width: 90%;
+    margin: auto;
+}
+
+.inner-configurator .choice-links {
+    justify-content: center;
+    gap: 20px;
+    margin-block: 15px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.intro-title-group {
+    margin-block: 3rem;
+}
+
+.classic-feature-03 .features-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.classic-feature-03 .features-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.classic-feature-03 .features-wrapper .features-box .features-img img {
+    width: 300px;
+    height: auto;
+}
+
+.switch-card img {
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+/* classic */
 
   /* Nav styles */
   nav .navbar-wrapper {
