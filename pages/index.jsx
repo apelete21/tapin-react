@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="linkaard-benefits">
-                <div className="text-container section-y-pad linkaard-benefits-intro">
+                <div className="text-container max-x-pad linkaard-benefits-intro">
                     <h1 className="text-head">Aller à l'éssentiel</h1>
                     <p className="sm-text-box main-paragraph">
                         Oubliez les cartes de visite traditionnelles en papier.
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
             <div className="card-choices">
 
-                <div className="text-container section-y-pad index-5">
+                <div className="text-container max-x-pad index-5">
                     <h2 className="text-head index-5">adapté à votre style</h2>
                     <p className="sm-text-box main-paragraph dark-font ">
                         Il existe une carte pour chaque style, chaque personnalité. Que
@@ -154,7 +154,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="card-choices-content section-y-pad">
+                <div className="card-choices-content max-x-pad">
                     <div className="description-wrapper">
                         <h4 className="subtitle">Carte PVC Coloris Vert</h4>
                         <p className="main-paragraph dark-font md-text-box">
@@ -206,7 +206,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="section-wrapper inner-section inner-section-padding bg-img-section bg-dark-light ma">
+            <div className="section-wrapper inner-section inner-section-padding bg-img-section bg-dark-light phone-illustration-slide">
 
                 <div className="flex flex-col align-center">
                     <div className="w-80">

@@ -232,7 +232,7 @@ export default function Pro() {
 
                         </div>
                         <div className="card-preview w-25">
-                            <div className="w-100">
+                            <div className="w-100 flex justify-center">
                                 <img
                                     src={("./images/classic-cards/image 78.png")}
                                     className="w-100 h-100"
@@ -248,7 +248,7 @@ export default function Pro() {
                                 <path d="M40.002 0.00128174C34.7492 0.00128174 29.5477 1.03591 24.6947 3.0461C19.8417 5.05629 15.4321 8.00267 11.7178 11.717C8.00341 15.4314 5.05704 19.8409 3.04685 24.6939C1.03666 29.547 0.00202919 34.7484 0.00202942 40.0013C0.00202965 45.2542 1.03666 50.4556 3.04685 55.3086C5.05704 60.1616 8.00342 64.5712 11.7178 68.2856C15.4321 71.9999 19.8417 74.9463 24.6947 76.9565C29.5477 78.9667 34.7492 80.0013 40.002 80.0013L40.002 40.0013L40.002 0.00128174Z" fill="#272727" />
                             </svg>
 
-                            <p className="bold ml-15">Tapin classic Bleu</p>
+                            <p className="bold ml-15 text-second">Tapin classic Bleu</p>
                         </div>
                         <div className="card-composition">
                             <p className="text-third mb-10">Matière</p>
@@ -278,7 +278,7 @@ export default function Pro() {
                                 <circle cx="40" cy="40" r="40" fill="#B48E56" />
                                 <path d="M40 0C29.3913 -1.26507e-07 19.2172 4.21427 11.7157 11.7157C4.21427 19.2172 9.27439e-07 29.3913 0 40C-9.27438e-07 50.6087 4.21427 60.7828 11.7157 68.2843C19.2172 75.7857 29.3913 80 40 80L40 40V0Z" fill="#0E0E0E" />
                             </svg>
-                            <p className="bold ml-15">Tapin classic Blanc</p>
+                            <p className="bold ml-15 text-second">Tapin classic Blanc</p>
                         </div>
                         <div className="card-composition">
                             <p className="text-third mb-10">Matière</p>
