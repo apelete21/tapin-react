@@ -558,12 +558,12 @@ nav .nav-link {
   gap: 2rem;
 }
 .classic-feature-02 .bottom-p {
-  font-size: 20px;
-  text-align: center;
-  color: var(--dark-700);
-  max-width: 50%;
-  margin: auto;
-  font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: var(--dark-700);
+    max-width: 50%;
+    margin: 20px auto 60px;
+    font-weight: 600;
 }
 .classic-feature-02 .features-wrapper .features-box {
   padding: 50px;
@@ -1627,10 +1627,7 @@ input:focus {
 .pro-cards-use-display .empty-cards {
     justify-content: flex-start;
 } 
- 
-.empty-cards img {
-    width: unset;
-}
+
 .classic-feature-02 .features-wrapper .features-box {
     padding: 30px;
     background-color: var(--clay);
@@ -1644,6 +1641,10 @@ input:focus {
     gap: 2rem;
     width: 100%;
     align-items: center;
+}
+
+.empty-cards img {
+    width: 17vw;
 }
 
 }
@@ -1829,12 +1830,13 @@ input:focus {
   }
 
   .empty-cards {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(2, 44%);
     margin-bottom: 50px;
   }
   .empty-cards img {
     width: 27vw;
+    min-width: 100%;
 }
 
   .classic-feature-02 .features-wrapper {
