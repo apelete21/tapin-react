@@ -4,8 +4,8 @@ import React from 'react'
 export default function Classic() {
     return (
         <>
-            <Navbar />
             <div className="section max-x-pad bg linkaard-classic-intro h-screen home-intro">
+            <Navbar />
                 <div className="section-container">
                     <div className="text-container">
                         <h2 className="text-head md-text-box">
@@ -20,10 +20,7 @@ export default function Classic() {
                 </div>
             </div>
 
-            <div className="classic-cards-showcase max-x-pad max-y-pad inner-section sm-bottom-padding">
-                <div className="text-container">
-                    <p className="main-paragraph">Pour ceux qui veulent bien</p>
-                </div>
+            <div className="classic-cards-showcase max-x-pad max-y-pad inner-section inner-section-padding sm-bottom-padding">
                 <div className="classic-models">
                     <div className="text-container">
                         <div className="sm-text-box">
@@ -84,7 +81,7 @@ export default function Classic() {
 
 
 
-            <div className="section-wrapper max-y-pad inner-section sm-bottom-padding">
+            <div className="section-wrapper max-y-pad inner-section inner-section-padding sm-bottom-padding">
                 <div className="section-content-wrapper">
                     <div className="md-text-box">
                         <h2 className="text-head text-center">
@@ -131,7 +128,7 @@ export default function Classic() {
 
             </div>
 
-            <div className="section-wrapper inner-section card-comparator">
+            <div className="section-wrapper inner-section inner-section-padding card-comparator">
                 <div className="listed-card-wrapper">
                     <div className="text-container">
                         <div className="text-head text-center">Vos Données, Notre Engagement</div>
@@ -373,7 +370,7 @@ export default function Classic() {
             </div>
 
 
-            <div className="section-wrapper classic-feature-03 inner-section">
+            <div className="section-wrapper classic-feature-03 inner-section inner-section-padding">
 
                 <div className="intro-title-group text-center">
                     <div className="sm-text-box">

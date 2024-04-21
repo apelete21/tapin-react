@@ -72,16 +72,16 @@ export default function Demo() {
                                 <div className="form rounded">
                                     <form action="" className="default-form flex flex-col content-between align-between">
                                         <div className="input-wrapper">
-                                            <input type="text" placeholder="Telephone" />
+                                            <input type="text" placeholder="Nom complet" />
+                                        </div>
+                                        <div className="input-wrapper">
+                                            <input type="text" placeholder="Email" />
                                         </div>
                                         <div className="input-wrapper">
                                             <input type="text" placeholder="Telephone" />
                                         </div>
                                         <div className="input-wrapper">
-                                            <input type="text" placeholder="mot de passe" />
-                                        </div>
-                                        <div className="input-wrapper">
-                                            <input type="text" placeholder="mot de passe" />
+                                            <input type="text" placeholder="Motif" />
                                         </div>
                                         <div className="textarea">
                                             <textarea name="" id="" placeholder="Message"></textarea>

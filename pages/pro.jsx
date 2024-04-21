@@ -45,7 +45,7 @@ export default function Pro() {
                             <img className="show-case-img" src={"/images/classic-cards/Group 7.png"} alt="" />
                         </div>
                         <div className="card-wrapper">
-                            <img className="show-case-img" src={require("../images/classic-cards/image 78.png")} alt="" />
+                            <img className="show-case-img" src={("/images/classic-cards/image 78.png")} alt="" />
                         </div>
                     </div>
                 </div>
