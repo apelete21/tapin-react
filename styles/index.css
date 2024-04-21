@@ -557,7 +557,7 @@ nav .nav-link {
 }
 
 .empty-cards img:hover {
-  scale: 1.1;
+  scale: 0.9;
   transition: all 0.2s ease;
   opacity: 0.8;
 }
@@ -1103,7 +1103,8 @@ nav .nav-link {
   background-image: url(/_next/static/media/bg-pro.ca57b927.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -959px;
+  background-position-x: center;
+    background-position-y: center;
 }
 
 .linkaard-classic-intro {
@@ -1170,10 +1171,13 @@ nav .nav-link {
 }
 
 .data-privacy .btn-group {
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .quotation-form-aside .text-intro {
@@ -1656,8 +1660,38 @@ input:focus {
 }
 
 /* Large devices (laptops/desktops, 1024px and down) */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 991px) {
   /* Adjustment styles */
+
+  .classic-feature-03 .features-wrapper .features-box {
+    /* flex: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 15px;
+    padding: 2rem;
+    aspect-ratio: 1 / 1;
+    width: 85vw;
+    /* width: auto; */
+  }
+  .cards-container .card img {
+    width: 70vw;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .cards-container span {
+    width: 100%;
+  }
+
+  .cards-container .card-element {
+    display: flex;
+    flex-direction: column;
+  }
 
   .intro-title-group .tittle-text-wrapper.w-50 {
     width: 80%;
@@ -1702,6 +1736,15 @@ input:focus {
     width: 80%;
   }
 
+  .empty-cards {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .empty-cards img {
+    width: 75vw;
+  }
+
   .col2 {
     flex-basis: 46%;
   }
@@ -1728,9 +1771,9 @@ input:focus {
     justify-content: space-between;
   }
 
-  .home-intro .section-container {
-    height: calc(100vh - 180px);
-  }
+      .home-intro .section-container {
+        height: calc(100vh - 376px);
+    }
   .classic-models .text-container {
     flex-direction: column;
     justify-content: space-between;
@@ -1748,6 +1791,7 @@ input:focus {
     margin-top: 50px;
     overflow-x: scroll;
     scrollbar-width: 0;
+    padding-inline: 2rem;
   }
   .share-options .options-container {
     display: flex;
@@ -1771,7 +1815,7 @@ input:focus {
   }
 
   .main-paragraph {
-    color: var(--gray-dark);
+    /* color: var(--gray-dark); */
     margin-bottom: 20px;
     font-weight: normal;
     font-size: 16px;
@@ -1799,7 +1843,6 @@ input:focus {
   .mobile-accordion-elements.hidden {
     display: none;
   }
-
 
   .listed-card-wrapper .listed-card {
     background-color: white;
@@ -1842,13 +1885,13 @@ input:focus {
   }
 
   .mobile-accordion-btn.open {
-        display: flex !important;
-        transform: rotateZ(180deg);
-    }
+    display: flex !important;
+    transform: rotateZ(180deg);
+  }
   .mobile-accordion-btn.closed {
-        display: flex !important;
-        transform: rotateZ(0deg);
-    }
+    display: flex !important;
+    transform: rotateZ(0deg);
+  }
 
   .listed-card .card-diagonal img {
     width: unset !important;
@@ -1867,7 +1910,7 @@ input:focus {
   }
 
   .empty-cards img {
-    width: 27vw;
+    width: 75vw;
     min-width: 100%;
   }
 
@@ -2070,6 +2113,13 @@ input:focus {
   .pro-cards-use-display .w-35 {
     width: 100%;
   }
+  
+  .demo-request-section .btn-wrapper {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
   .pro-cards-use-display .empty-cards {
     justify-content: flex-start;
     width: 100%;
@@ -2100,11 +2150,11 @@ input:focus {
   }
 
   .bg-img-section {
-    background-position: -300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 75vh;
-  }
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 85vh;
+    }
 
   /* .pro-cards-use-display .max-x-pad {
     padding-inline: 17px 0;
@@ -2121,7 +2171,7 @@ input:focus {
 
   .product-features .text-head {
     text-align: center;
-}
+  }
 
   .md-text-box {
     width: 90%;
@@ -2149,6 +2199,7 @@ input:focus {
     display: flex;
     gap: 10px;
   }
+  
   .sharing-methods-wrapper {
     padding-top: 0vh;
     flex-direction: column;
