@@ -1064,7 +1064,7 @@ nav .nav-link {
 }
 
 .home-intro .section-container {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 
 .pro-app-features .pro-app-feature-wrapper .pro-app-feature-box p {
@@ -1851,7 +1851,7 @@ input:focus {
   }
 
   .home-intro .section-container {
-    height: calc(100vh - 376px);
+    height: calc(100vh - 190px);
   }
   .classic-models .text-container {
     flex-direction: column;
