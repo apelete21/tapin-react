@@ -6,7 +6,7 @@ export default function Classic() {
     const [accordion2, setAccordion2] = useState(true)
     return (
         <>
-            <div className="section max-x-pad bg linkaard-classic-intro h-screen home-intro">
+            <div className="section bg linkaard-classic-intro h-screen home-intro">
             <Navbar />
                 <div className="section-container">
                     <div className="text-container">
