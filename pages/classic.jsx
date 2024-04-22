@@ -7,8 +7,8 @@ export default function Classic() {
     return (
         <>
             <div className="section bg linkaard-classic-intro h-screen home-intro">
-            <Navbar />
-                <div className="section-container">
+                <Navbar />
+                <div className="section-container max-x-pad">
                     <div className="text-container">
                         <h2 className="text-head md-text-box">
                             Faites un saut de visite réinventée vers le futur
