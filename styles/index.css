@@ -309,6 +309,44 @@ nav .nav-link {
   justify-content: space-between;
 }
 
+.popups {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 5vh 5vw;
+    background-color: rgba(0, 0, 0, 0.753);
+    overflow-y: scroll;
+}
+
+.popups .closeBtn {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.popups .closeBtn span {
+    border-radius: 15px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(247, 48, 48, 0.699);
+    /* transform: rotateZ(90deg); */
+    cursor: pointer;
+}
+
+.popups .demo-video {
+  /* width: 100% !important; */
+}
+
+.popups .quotation-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .demo-request-section .text-container .text-head {
   width: 55%;
 }

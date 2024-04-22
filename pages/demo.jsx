@@ -1,9 +1,41 @@
 import Navbar from '@/components/navbar'
-import React from 'react'
+import { PopForm, PopVideo } from '@/components/popups'
+import React, { useState } from 'react'
+import { createPortal } from 'react-dom'
 
 export default function Demo() {
+
+    const [popVideo, setPopVideo] = useState(false)
+    const [popForm, setPopForm] = useState(false)
+
+    const openForm = (e) => {
+        e.preventDefault()
+        setPopForm(true)
+    }
+
+    const closeForm = (e) => {
+        e.preventDefault()
+        setPopForm(false)
+    }
+
+    const openVideo = (e) => {
+        e.preventDefault()
+        setPopVideo(true)
+    }
+
+    const closeVideo = (e) => {
+        e.preventDefault()
+        setPopVideo(false)
+    }
+
     return (
         <>
+            {
+                popForm ? createPortal(<PopForm closeForm={closeForm} />, document.body) : <></>
+            }
+            {
+                popVideo ? createPortal(<PopVideo closeVideo={closeVideo} />, document.body) : <></>
+            }
             <Navbar />
             <div className="section-wrapper demo-intro inner-section inner-section-padding ">
                 <div className="max-x-pad">
@@ -109,8 +141,8 @@ export default function Demo() {
                     </div>
 
                     <div className="btn-wrapper mt-3">
-                        <a href="" className="btn secondary-btn">Voir la video de demo</a>
-                        <a href="" className="btn light-btn">Demander une demo personnalisée</a>
+                        <a href="#" onClick={openVideo} className="btn secondary-btn">Voir la video de demo</a>
+                        <a href="#" onClick={openForm} className="btn light-btn">Demander une demo personnalisée</a>
                     </div>
                 </div>
             </div>
