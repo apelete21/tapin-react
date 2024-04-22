@@ -7,8 +7,9 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={`main-navbar max-x-pad ${links ? "color-black" : ""}`}>
-                {links ? <div className='nav-bg-white' /> : <></>}
+            <nav className={`main-navbar max-x-pad ${links ? "color-black" : ""} ${dropdown ? "color-black" : ""}`}>
+                {links ? <div className='nav-bg-white links' /> : <></>}
+                {dropdown ? <div className='nav-bg-white dropdown' /> : <></>}
                 <div className="navbar-wrapper">
                     <div className="navbar-links-group">
                         <div className='link_menu flex'>
