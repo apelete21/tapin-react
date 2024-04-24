@@ -7,7 +7,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={`main-navbar max-x-pad ${links ? "color-black" : ""} ${dropdown ? "color-black" : ""}`}>
+            <nav className={`main-navbar max-x-pad ${links ? "color-black fixed" : ""} ${dropdown ? "color-black fixed" : ""}`}>
                 {links ? <div className='nav-bg-white links' /> : <></>}
                 {dropdown ? <div className='nav-bg-white dropdown' /> : <></>}
                 <div className="navbar-wrapper">
@@ -18,9 +18,12 @@ export default function Navbar() {
                         </div>
                         <div className={`nav-links`}>
                             <div className={`nav-link flex-col ${links ? "flex" : "hidden"}`}>
-                                <div className="flex w-100 with-dropdown" onClick={() => {
-                                    setDropdown(!dropdown)
-                                }}>
+                                <div className="flex w-100 with-dropdown" onMouseEnter={() => {
+                                    setDropdown(true)
+                                }} 
+                                onMouseLeave={() => setDropdown(false)}
+                                onClick={()=> {setDropdown(!dropdown)}}
+                                >
                                     <span>Nos services</span>
                                     <span className='arrow' style={{
                                         transform: dropdown ? "rotateZ(180deg)" : "none"

@@ -14,6 +14,9 @@ export function PopForm({ closeForm }) {
             <div className="grid-col-7 quotation-form">
                 <div className=" ">
                     <div className="form rounded">
+                    <p className="text-second text-center mb-10">
+                        Formulaire de demande de Demo
+                    </p>
                         <form action="" className="default-form flex flex-col content-between align-between">
                             <div className="input-wrapper">
                                 <input type="text" placeholder="Nom complet" />
@@ -52,7 +55,7 @@ export function PopVideo({ closeVideo }) {
             <iframe className='demo-video' style={{
                 width: "100%",
                 height: "80%",
-                border: "2px solid red",
+                border: "2px solid #b565ce",
                 borderRadius: 15,
             }} src="https://www.youtube.com/embed/kRu8JkdoF0o?si=zzu2Cj6bUJHC816R" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>

@@ -206,7 +206,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="section-wrapper inner-section inner-section-padding bg-img-section bg-dark-light phone-illustration-slide">
+            <div className="section-wrapper inner-section inner-section-padding  bg-dark-light phone-illustration-slide">
 
                 <div className="flex flex-col align-center">
                     <div className="w-80">

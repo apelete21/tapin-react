@@ -67,7 +67,7 @@ export default function About() {
                       </div>
 
 
-                      <div className="flex justify-center fadeIn-img-wrapper">
+                      <div className="flex justify-center fadeIn-img-wrapper mt-2">
                           <img src={("./images/about/img-4.png")} alt="" className="w-100" />
                       </div>
                   </div>
