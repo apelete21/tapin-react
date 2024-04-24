@@ -6,23 +6,28 @@ export default function Navbar() {
     const [dropdown, setDropdown] = useState(false)
 
     return (
-        <>
-            <nav className={`main-navbar max-x-pad ${links ? "color-black fixed" : ""} ${dropdown ? "color-black fixed" : ""}`}>
+        <> {
+            links || dropdown ? <ReplacementElement />
+                : <></>
+        }
+            <nav className={`main-navbar max-x-pad ${links ? "color-black fixed" : ""} ${dropdown ? "color-black fixed" : ""}`} 
+            onMouseLeave={() => { if (!links) setDropdown(false) }}>
                 {links ? <div className='nav-bg-white links' /> : <></>}
                 {dropdown ? <div className='nav-bg-white dropdown' /> : <></>}
                 <div className="navbar-wrapper">
                     <div className="navbar-links-group">
                         <div className='link_menu flex'>
                             <a href="/" className="nav-logo">TAPIN</a>
-                            <a onClick={() => setLinks(!links)} className='menu_btn'>{!links ? "=" : "x"}</a>
+                            <a onClick={() => setLinks(!links)} className='menu_btn' style={{ cursor: "pointer" }}>{!links ? "=" : "x"}</a>
                         </div>
                         <div className={`nav-links`}>
-                            <div className={`nav-link flex-col ${links ? "flex" : "hidden"}`}>
+                            <div className={`nav-link flex-col ${links ? "flex" : "hidden"}`} onMouseLeave={() => {
+                                if (links) { setDropdown(false) }
+                            }}>
                                 <div className="flex w-100 with-dropdown" onMouseEnter={() => {
                                     setDropdown(true)
-                                }} 
-                                onMouseLeave={() => setDropdown(false)}
-                                onClick={()=> {setDropdown(!dropdown)}}
+                                }}
+                                    onClick={() => { setDropdown(!dropdown) }}
                                 >
                                     <span>Nos services</span>
                                     <span className='arrow' style={{
@@ -56,7 +61,7 @@ export default function Navbar() {
     )
 }
 
-export function DropdownItems({ className }) {
+function DropdownItems({ className }) {
     return (
         <div className={`dropdown-menu justify-between gap-20 ${className}`}>
             <a href='/classic' className="dropdown-link flex justify-between gap-10 bg-light-violet color-white">
@@ -90,3 +95,11 @@ export function DropdownItems({ className }) {
     )
 }
 
+function ReplacementElement() {
+    return (
+        <div style={{
+            height: 90,
+            width: "100%"
+        }} />
+    )
+}

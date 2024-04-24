@@ -182,6 +182,7 @@ nav.fixed {
   position: fixed;
   width: 100%;
   z-index: 50;
+  top: 0;
 }
 
 .with-dropdown {
@@ -2229,7 +2230,7 @@ input:focus {
 
   .mobile-menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .desktop-menu {
@@ -2601,5 +2602,9 @@ input:focus {
 @media only screen and (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
   }
 }
