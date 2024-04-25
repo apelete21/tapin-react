@@ -3,6 +3,7 @@
   --dark_green: #106122;
   --gray-dark: #858585;
   --gray-light: #cfcece;
+  --gray-light-100: #e7e7e7;
   --clay: #f5f5f5;
   --dark-700: #4b4b5a;
   --light-blue: #b8c0ff;
@@ -1779,6 +1780,110 @@ input:focus {
 
 /* Footer */
 
+/* Login page design */
+
+.login-bg-image {
+  background-image: url(../images/space.png);
+  padding-block: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-form-container {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.user-form-container .user-form {
+}
+
+.user-form .form-title {
+  margin-bottom: 25%;
+}
+
+.user-form .form-subtitle {
+  font-weight: 500;
+}
+
+.user-form .form-input-element-container {
+}
+
+.user-form .form-input-element-container .form-input-element {
+  border-radius: 13px;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  background: var(--gray-light-100);
+  margin-block: 8px;
+}
+
+.user-form .passwd-retrieve-link {
+  font-size: smaller;
+  text-align: center;
+  margin-block: 15px;
+  color: #6146f2;
+}
+
+.form-input-element-container .form-submit-element {
+  border-radius: 100px;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  margin-block: 8px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.user-form .other-option {
+  margin-block: 20px;
+}
+
+.color-gray-light {
+  color: var(--gray-dark);
+}
+
+.bg-gray-light-100 {
+  background: var(--gray-light-100);
+}
+
+.bg-violet {
+  background: violet;
+  color: white;
+}
+
+.bg-light-green {
+  background: #7ddf3c;
+  color: black;
+}
+
+.other-option .line-bars {
+  display: inline-flex;
+  width: 100%;
+  height: 2px;
+  margin-block: 25px;
+}
+
+.go-register-btn-container {
+  padding: 9px;
+  border-radius: 100px;
+  border: 1px solid var(--gray-light-100);
+  font-size: smaller;
+}
+
+.go-register-btn-container > * {
+  padding: 10px 20px;
+}
+
+.go-register-btn-container .go-register-btn {
+  border-radius: 100px;
+}
+
+/* Login page design */
+
 @media only screen and (max-width: 1280px) {
   .pro-cards-use-display > div {
     flex-direction: column;
@@ -1820,6 +1925,10 @@ input:focus {
 /* Large devices (laptops/desktops, 1024px and down) */
 @media only screen and (max-width: 991px) {
   /* Adjustment styles */
+
+  .user-form-container {
+    height: unset;
+  }
 
   .classic-feature-03 .features-wrapper .features-box {
     /* flex: auto; */

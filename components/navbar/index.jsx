@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 export default function Navbar() {
@@ -17,8 +18,8 @@ export default function Navbar() {
                 <div className="navbar-wrapper">
                     <div className="navbar-links-group">
                         <div className='link_menu flex'>
-                            <a href="/" className="nav-logo">TAPIN</a>
-                            <a onClick={() => setLinks(!links)} className='menu_btn' style={{ cursor: "pointer" }}>{!links ? "=" : "x"}</a>
+                            <Link href="/" className="nav-logo">TAPIN</Link>
+                            <span onClick={() => setLinks(!links)} className='menu_btn' style={{ cursor: "pointer" }}>{!links ? "=" : "x"}</span>
                         </div>
                         <div className={`nav-links`}>
                             <div className={`nav-link flex-col ${links ? "flex" : "hidden"}`} onMouseLeave={() => {
@@ -43,13 +44,13 @@ export default function Navbar() {
                                     : ""
                                 }
                             </div>
-                            <a href="/demo" className={`nav-link ${links ? "flex" : "hidden"}`}>Démo & Devis</a>
-                            <a href="/about" className={`nav-link ${links ? "flex" : "hidden"}`}>A propos</a>
+                            <Link href="/demo" className={`nav-link ${links ? "flex" : "hidden"}`}>Démo & Devis</Link>
+                            <Link href="/about" className={`nav-link ${links ? "flex" : "hidden"}`}>A propos</Link>
                         </div>
                     </div>
                     <div className="navbar-btn-group">
-                        <a href="#" className={`nav-link ${links ? "flex" : "hidden"}`}>Commander</a>
-                        <a href="#" className={`nav-link btn secondary-btn ${links ? "flex" : "hidden"}`}>Connexion</a>
+                        <Link href="#" className={`nav-link ${links ? "flex" : "hidden"}`}>Commander</Link>
+                        <Link href="/login" className={`nav-link btn secondary-btn ${links ? "flex" : "hidden"}`}>Connexion</Link>
                     </div>
                 </div>
                 {dropdown ?
@@ -64,7 +65,7 @@ export default function Navbar() {
 function DropdownItems({ className }) {
     return (
         <div className={`dropdown-menu justify-between gap-20 ${className}`}>
-            <a href='/classic' className="dropdown-link flex justify-between gap-10 bg-light-violet color-white">
+            <Link href='/classic' className="dropdown-link flex justify-between gap-10 bg-light-violet color-white">
                 <div className="dropdown-link-text">
                     <div className="link-title bold">
                         Tapin classic card
@@ -76,8 +77,8 @@ function DropdownItems({ className }) {
                 <div className="dropdown-link-img">
                     <img src="/images/classic-cards/Group 7.png" alt="" />
                 </div>
-            </a>
-            <a href='/pro' className="dropdown-link flex justify-between gap-10 bg-dark-light color-white">
+            </Link>
+            <Link href='/pro' className="dropdown-link flex justify-between gap-10 bg-dark-light color-white">
                 <div className="dropdown-link-text">
                     <div className="link-title bold">
                         Tapin classic pro
@@ -89,7 +90,7 @@ function DropdownItems({ className }) {
                 <div className="dropdown-link-img">
                     <img src="/images/classic-cards/image 78.png" alt="" />
                 </div>
-            </a>
+            </Link>
 
         </div>
     )
