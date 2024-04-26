@@ -1790,11 +1790,16 @@ input:focus {
   align-items: center;
 }
 
+.login-page {
+  padding-block: 5vh;
+}
+
 .user-form-container {
   width: 100%;
   max-width: 450px;
   background: white;
   padding: 30px;
+  margin-block: 4vh;
   border-radius: 20px;
 }
 
@@ -1802,11 +1807,14 @@ input:focus {
 }
 
 .user-form .form-title {
-  margin-bottom: 25%;
+  margin-bottom: 20%;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .user-form .form-subtitle {
   font-weight: 500;
+  font-size: 1.4rem;
 }
 
 .user-form .form-input-element-container {

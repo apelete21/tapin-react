@@ -4,10 +4,10 @@ import React from 'react'
 export default function Login() {
     return (
         <div className='w-screen h-screen bg-img-section login-bg-image max-x-pad'>
-            <div className="user-form-container h-100">
+            <div className="user-form-container">
                 <form className="user-form">
-                    <div className="form-title text-second">TAPIN</div>
-                    <div className="form-subtitle mb-10">
+                    <div className="form-title text-head">TAPIN</div>
+                    <div className="form-subtitle text-second bold mb-10 w-70">
                         Heureux de vous revoir
                     </div>
                     <div className="form-input-element-container">
