@@ -3,6 +3,8 @@ import { PopForm, PopVideo } from '@/components/popups'
 import React, { useState } from 'react'
 import { createPortal } from 'react-dom'
 
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 export default function Demo() {
 
     const [popVideo, setPopVideo] = useState(false)
@@ -174,156 +176,40 @@ export default function Demo() {
                         </div>
                     </div>
                     <div className="faq-elements flex gap-20 max-y-pad">
-                        <div className="acc-col">
-                            <div className="accordions-container flex flex-col">
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow">
-                                            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 8.16666L8.00016 0.249997L15.9168 8.16666H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-
-                                        </span>
-                                    </div>
-                                    <p className="main-paragraph w-80 mt-2">
-                                        Pour ceux qui veulent bien plus qu'une simple carte de visite,
-                                        il y'a TAP'IN
-                                    </p>
-                                </div>
-
-
-
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                                <div className="accordion-box active">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 8.16666L8.00016 0.249997L15.9168 8.16666H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>  </span>
-                                    </div>
-                                    <div className="main-paragraph acc-content w-80 mt-2">
-                                        Pour ceux qui veulent bien plus qu'une simple carte de visite,
-                                        il y'a TAP'IN
-                                    </div>
-                                </div>
-
-
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </div>
-
-
+                            <div className="accordions-container flex gap-20">
+                                {array.map((e, i) => {
+                                    return <FaQCard key={i} data={e} />
+                                })}
                             </div>
-                        </div>
-                        <div className="acc-col">
-                            <div className="accordions-container flex flex-col">
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow">  <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-                                        </span>
-                                    </div>
-                                    <div className="main-paragraph  mt-2">
-                                        Pour ceux qui veulent bien plus qu'une simple carte de visite,
-                                        il y'a TAP'IN
-                                    </div>
-                                </div>
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-                                        </span>
-                                    </div>
-                                    <div className="main-paragraph mt-2">
-                                        Pour ceux qui veulent bien plus qu'une simple carte de visite,
-                                        il y'a TAP'IN
-                                    </div>
-                                </div>
-                                <div className="accordion-box">
-                                    <div className="accordion-header flex content-between">
-                                        <div className="accordion-title">
-                                            Comment sont protégés mes données ?
-                                        </div>
-                                        <span className="accordion-arrow"> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.0834961 0.833328L8.00016 8.75L15.9168 0.833328H0.0834961Z" fill="#CBD6E2" />
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
 
+        </>
+    )
+}
+
+
+function FaQCard({ data }) {
+    const [accordion, setAccordion] = useState(false)
+    return (
+        <>
+            <div className="accordion-box pointer" onClick={() => { setAccordion(!accordion) }}>
+                <div className="accordion-header flex content-between">
+                    <div className="accordion-title">
+                        Comment sont protégés mes données ?
+                    </div>
+                    <span className="accordion-arrow">
+                        <svg width="16" height="9" className={!accordion ? 'rotate-45' : ""}  viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0834961 8.16666L8.00016 0.249997L15.9168 8.16666H0.0834961Z" fill="#CBD6E2" />
+                        </svg>
+                    </span>
+                </div>
+                {accordion ? <p className="main-paragraph w-80 mt-2">
+                    Pour ceux qui veulent bien plus qu'une simple carte de visite,
+                    il y'a TAP'IN
+                </p> : <></>}
+            </div>
         </>
     )
 }

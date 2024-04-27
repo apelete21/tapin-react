@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
             <footer class="main-footer max-x-pad">
                 <div class="footer-head flex justify-between">
                     <div class="contact-us w-50">
-                        <div class="logo"><a href="/">TAPIN</a></div>
+                        <div class="logo"><Link href="/">TAPIN</Link></div>
                         <div class="email-us">
                             <p class="email-title">Email</p>
                             <p class="our-email paragraph">hello@tapin.com</p>
@@ -16,7 +17,7 @@ export default function Footer() {
                             <p class="our-tel paragraph">+228 90 20 23 23</p>
                         </div>
                         <div class="location-link-container">
-                            <a href="#" class="location-link"> Trouver sur Google map </a>
+                            <Link href="#" class="location-link"> Trouver sur Google map </Link>
                         </div>
                     </div>
                     <div class="links-social-description w-50">
@@ -25,16 +26,16 @@ export default function Footer() {
                                 <div class="navigation-title">Navigation</div>
                                 <ul class="navigation-links">
                                     <li class="navigation-link-item">
-                                        <a href="/classic" class="">Tapin Classic</a>
+                                        <Link href="/classic" class="">Tapin Classic</Link>
                                     </li>
                                     <li class="navigation-link-item">
-                                        <a href="/pro" class="">Tapin Pro</a>
+                                        <Link href="/pro" class="">Tapin Pro</Link>
                                     </li>
                                     <li class="navigation-link-item">
-                                        <a href="/demo" class="">Demo & devis Pro</a>
+                                        <Link href="/demo" class="">Demo & devis Pro</Link>
                                     </li>
                                     <li class="navigation-link-item">
-                                        <a href="/about" class="">A propos</a>
+                                        <Link href="/about" class="">A propos</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -42,28 +43,28 @@ export default function Footer() {
                                 <div class="socials-title">Nos actualités</div>
                                 <ul class="socials-links">
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">Facebook</a>
+                                        <Link href="#" class="social-link-item">Facebook</Link>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
 
                                     </li>
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">Instagram</a>
+                                        <Link href="#" class="social-link-item">Instagram</Link>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
 
                                     </li>
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">Youtube</a>
+                                        <Link href="#" class="social-link-item">Youtube</Link>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
 
                                     </li>
                                     <li class="social-link-item flex">
-                                        <a href="#" class="social-link-item">TikTok</a>
+                                        <Link href="#" class="social-link-item">TikTok</Link>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.01522 11.4116L9.95262 3.54188L9.92152 10.8025L11.7594 10.8039L11.8039 0.413013L1.41308 0.368507L1.40523 2.1999L8.65932 2.23746L0.721924 10.1072L2.01522 11.4116Z" fill="white" fillOpacity="0.65" />
                                         </svg>
@@ -92,9 +93,9 @@ export default function Footer() {
                 <div class="copyright flex justify-between padding-top-100">
                     <div class="paragraph"> &copy; 2023 Tapin Tous droits reservés</div>
                     <div class="copy-links flex">
-                        <a href='#' class="paragraph">Mentions Légales</a>
-                        <a href='#' class="paragraph ml-15">CGU</a>
-                        <a href='#' class="paragraph ml-15">Confidentialité</a>
+                        <Link href='#' class="paragraph">Mentions Légales</Link>
+                        <Link href='#' class="paragraph ml-15">CGU</Link>
+                        <Link href='#' class="paragraph ml-15">Confidentialité</Link>
                     </div>
                 </div>
             </footer>

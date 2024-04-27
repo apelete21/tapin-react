@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function Login() {
     return (
-        <div className='w-screen h-screen bg-img-section login-bg-image max-x-pad'>
+        <div className='login-page w-screen h-screen bg-img-section login-bg-image max-x-pad'>
             <div className="user-form-container">
                 <form className="user-form">
-                    <div className="form-title text-head">TAPIN</div>
-                    <div className="form-subtitle text-second bold mb-10 w-70">
+                    <div className="form-title bold">TAPIN</div>
+                    <div className="form-subtitle bold mb-10 w-70">
                         Heureux de vous revoir
                     </div>
                     <div className="form-input-element-container">
@@ -26,9 +26,9 @@ export default function Login() {
                     </div>
                 </form>
                 <div className="other-option flex items-center gap-20">
-                    <span className="line-bars bg-gray-light-100"/>
+                    <span className="line-bars bg-gray-light-100" />
                     <p className="other-option-text color-gray-light">ou</p>
-                    <span className="line-bars bg-gray-light-100"/>
+                    <span className="line-bars bg-gray-light-100" />
                 </div>
                 <div className="form-input-element-container">
                     <input type="submit" className="form-submit-element" value={"Continuer avec l'addresse e-mail"} />
