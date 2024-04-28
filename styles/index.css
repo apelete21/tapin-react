@@ -224,7 +224,7 @@ nav.fixed {
 }
 
 .dropdown-link-img {
-  width: 25%;
+  width: 15%;
   position: relative;
   transition: 0.5s ease;
 }
@@ -2389,6 +2389,10 @@ input:focus {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .mobile-nav-hidden-el {
+    display: none;
   }
 
   .with-dropdown {

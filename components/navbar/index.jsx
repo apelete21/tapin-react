@@ -11,8 +11,8 @@ export default function Navbar() {
             links || dropdown ? <ReplacementElement />
                 : <></>
         }
-            <nav className={`main-navbar max-x-pad ${links ? "color-black fixed" : ""} ${dropdown ? "color-black fixed" : ""}`} 
-            onMouseLeave={() => { if (!links) setDropdown(false) }}>
+            <nav className={`main-navbar max-x-pad ${links ? "color-black fixed" : ""} ${dropdown ? "color-black fixed" : ""}`}
+                onMouseLeave={() => { if (!links) setDropdown(false) }}>
                 {links ? <div className='nav-bg-white links' /> : <></>}
                 {dropdown ? <div className='nav-bg-white dropdown' /> : <></>}
                 <div className="navbar-wrapper">
@@ -22,7 +22,7 @@ export default function Navbar() {
                             <span onClick={() => setLinks(!links)} className='menu_btn' style={{ cursor: "pointer" }}>{!links ? "=" : "x"}</span>
                         </div>
                         <div className={`nav-links`}>
-                            <div className={`nav-link flex-col ${links ? "flex" : "hidden"}`} onMouseLeave={() => {
+                            <div className={`nav-link flex-col ${links ? "flex" : "mobile-nav-hidden-el"}`} onMouseLeave={() => {
                                 if (links) { setDropdown(false) }
                             }}>
                                 <div className="flex w-100 with-dropdown" onMouseEnter={() => {
@@ -44,13 +44,13 @@ export default function Navbar() {
                                     : ""
                                 }
                             </div>
-                            <Link href="/demo" className={`nav-link ${links ? "flex" : "hidden"}`}>Démo & Devis</Link>
-                            <Link href="/about" className={`nav-link ${links ? "flex" : "hidden"}`}>A propos</Link>
+                            <Link href="/demo" className={`nav-link ${links ? "flex" : "mobile-nav-hidden-el"}`}>Démo & Devis</Link>
+                            <Link href="/about" className={`nav-link ${links ? "flex" : "mobile-nav-hidden-el"}`}>A propos</Link>
                         </div>
                     </div>
                     <div className="navbar-btn-group">
-                        <Link href="#" className={`nav-link ${links ? "flex" : "hidden"}`}>Commander</Link>
-                        <Link href="/login" className={`nav-link btn secondary-btn ${links ? "flex" : "hidden"}`}>Connexion</Link>
+                        <Link href="#" className={`nav-link ${links ? "flex" : "mobile-nav-hidden-el"}`}>Commander</Link>
+                        <Link href="/login" className={`nav-link btn secondary-btn ${links ? "flex" : "mobile-nav-hidden-el"}`}>Connexion</Link>
                     </div>
                 </div>
                 {dropdown ?
