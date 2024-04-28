@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
   const { pathname } = useRouter();
-  console.log(pathname);
+  // console.log(pathname);
   return (
     <>
       <Component {...pageProps} />

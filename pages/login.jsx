@@ -6,7 +6,9 @@ export default function Login() {
         <div className='login-page w-screen h-screen bg-img-section login-bg-image max-x-pad'>
             <div className="user-form-container">
                 <form className="user-form">
-                    <div className="form-title bold">TAPIN</div>
+                    <div className="form-title bold">
+                        <Link href={"/"}>TAPIN</Link>
+                    </div>
                     <div className="form-subtitle bold mb-10 w-70">
                         Heureux de vous revoir
                     </div>
