@@ -1,6 +1,8 @@
 import { CardComparator } from '@/components/cardComparator'
 import Navbar from '@/components/navbar'
 import React, { useState } from 'react'
+import Link from 'next/link'
+
 
 export default function Pro() {
     const [accordion1, setAccordion1] = useState(true)
