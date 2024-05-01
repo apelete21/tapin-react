@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 export function CardComparator() {
@@ -8,120 +9,6 @@ export function CardComparator() {
 
     return (
         <>
-            {/* <div className="section-wrapper inner-section inner-section-padding card-comparator">
-                <div className="listed-card-wrapper">
-                    <div className="text-container">
-                        <div className="text-head text-center">Vos Données, Notre Engagement</div>
-                        <span className="paragraph text-center w-70">
-                            Nous accordons une attention particulière à la protection de vos
-                            informations, qu'elles soient personnelles ou professionnelles. Vos
-                            données sont soigneusement chiffrées et sécurisées sur nos serveurs
-                            en France, ainsi que sur vos cartes de visite NFC. Grâce à notre
-                            technologie de pointe
-                        </span>
-                    </div>
-
-
-                    <div className="listed-card flex">
-                        <div className="flex">
-                            <div className="active-card-features w-60">
-                                <div className="">
-                                    <h3 className="active-card-title w-50 mb-30">
-                                        Votre carte de visite réinventée
-                                    </h3>
-                                    <div className="card-number">
-                                        <span className="bold">Model No:</span>
-                                        <span className="paragraph">ZAE054</span>
-                                    </div>
-                                </div>
-                                <CardFeatureBox />
-                            </div>
-
-                        </div>
-                        <div className="card-preview w-25">
-                            <div className="w-100 flex justify-center">
-                                <img
-                                    src={("./images/classic-cards/image 78.png")}
-                                    className="w-100 h-100"
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="listed-card card-services-details flex align-center ">
-                        <div className="card-color-selector flex item-center">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40.0014" r="40" fill="#5E67B4" />
-                                <path d="M40.002 0.00128174C34.7492 0.00128174 29.5477 1.03591 24.6947 3.0461C19.8417 5.05629 15.4321 8.00267 11.7178 11.717C8.00341 15.4314 5.05704 19.8409 3.04685 24.6939C1.03666 29.547 0.00202919 34.7484 0.00202942 40.0013C0.00202965 45.2542 1.03666 50.4556 3.04685 55.3086C5.05704 60.1616 8.00342 64.5712 11.7178 68.2856C15.4321 71.9999 19.8417 74.9463 24.6947 76.9565C29.5477 78.9667 34.7492 80.0013 40.002 80.0013L40.002 40.0013L40.002 0.00128174Z" fill="#272727" />
-                            </svg>
-
-                            <div className="bold ml-15 paragraph flex justify-between align-center w-100">
-                                <span>Tapin classic Bleu</span>
-                                <span className={`link-icon mobile-accordion-btn ${accordion1 ? "open" : "closed"}`} onClick={() => setAccordion1(!accordion1)}> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.0834961 8.16666L8.00016 0.249997L15.9168 8.16666H0.0834961Z" fill="#CBD6E2" />
-                                </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div className={`card-composition mobile-accordion-elements`}>
-                            <p className="text-third mb-10">Matière</p>
-                            <p className="paragraph">PVC</p>
-                        </div>
-                        <div className={`out-link mobile-accordion-elements`}>
-                            <div className="link-icon">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clipPath="url(#clip0_249_232)">
-                                        <path d="M13.3884 9.45999C13.1688 9.46157 12.9517 9.50698 12.7499 9.59355C12.5481 9.68011 12.3656 9.8061 12.2131 9.96412C12.0606 10.1221 11.9411 10.309 11.8618 10.5138C11.7824 10.7186 11.7448 10.9371 11.751 11.1566C11.7572 11.3761 11.8072 11.5922 11.898 11.7922C11.9888 11.9921 12.1186 12.172 12.2798 12.3211C12.441 12.4702 12.6303 12.5857 12.8367 12.6607C13.0431 12.7357 13.2624 12.7688 13.4818 12.7579L29.3399 12.3161L9.54601 32.11C9.23657 32.4195 9.06273 32.8392 9.06274 33.2768C9.06273 33.7144 9.23658 34.1341 9.54601 34.4435C9.85545 34.7529 10.2751 34.9268 10.7127 34.9268C11.1503 34.9268 11.57 34.7529 11.8795 34.4435L31.6765 14.6465L31.2347 30.5108C31.2238 30.7302 31.2569 30.9495 31.3319 31.1559C31.4069 31.3623 31.5224 31.5516 31.6715 31.7128C31.8207 31.874 32.0005 32.0038 32.2004 32.0946C32.4004 32.1854 32.6165 32.2354 32.836 32.2416C33.0555 32.2478 33.2741 32.2102 33.4788 32.1308C33.6836 32.0515 33.8705 31.932 34.0285 31.7795C34.1865 31.627 34.3125 31.4445 34.3991 31.2427C34.4856 31.0409 34.531 30.8238 34.5326 30.6042L35.074 11.1774C35.0883 10.695 34.9428 10.2214 34.6602 9.83023C34.5284 9.62552 34.3531 9.45237 34.1468 9.3231C33.7588 9.04701 33.2912 8.905 32.8152 8.91863L13.3884 9.45999Z" fill="#75808A" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_249_232">
-                                            <rect width="44" height="44" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div className={`card-diagonal mobile-accordion-elements`}>
-                            <img src={("./images/card-diagonal-blue.png")} alt="" />
-                        </div>
-                    </div>
-                    <div className="listed-card card-services-details flex align-center">
-                        <div className="card-color-selector flex item-center">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40" r="40" fill="#B48E56" />
-                                <path d="M40 0C29.3913 -1.26507e-07 19.2172 4.21427 11.7157 11.7157C4.21427 19.2172 9.27439e-07 29.3913 0 40C-9.27438e-07 50.6087 4.21427 60.7828 11.7157 68.2843C19.2172 75.7857 29.3913 80 40 80L40 40V0Z" fill="#0E0E0E" />
-                            </svg>
-                            <div className="bold ml-15 paragraph flex justify-between align-center w-100">
-                                <span>Tapin classic Blanc</span>
-                                <span className={`link-icon mobile-accordion-btn ${accordion2 ? "open" : "closed"}`} onClick={() => setAccordion2(!accordion2)}> <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.0834961 8.16666L8.00016 0.249997L15.9168 8.16666H0.0834961Z" fill="#CBD6E2" />
-                                </svg>  </span>
-                            </div>
-                        </div>
-                        <div className={`card-composition mobile-accordion-elements`}>
-                            <p className="text-third mb-10">Matière</p>
-                            <p className="paragraph">PVC</p>
-                        </div>
-                        <div className={`out-link mobile-accordion-elements `}>
-                            <div className="link-icon p-20">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clipPath="url(#clip0_249_232)">
-                                        <path d="M13.3884 9.45999C13.1688 9.46157 12.9517 9.50698 12.7499 9.59355C12.5481 9.68011 12.3656 9.8061 12.2131 9.96412C12.0606 10.1221 11.9411 10.309 11.8618 10.5138C11.7824 10.7186 11.7448 10.9371 11.751 11.1566C11.7572 11.3761 11.8072 11.5922 11.898 11.7922C11.9888 11.9921 12.1186 12.172 12.2798 12.3211C12.441 12.4702 12.6303 12.5857 12.8367 12.6607C13.0431 12.7357 13.2624 12.7688 13.4818 12.7579L29.3399 12.3161L9.54601 32.11C9.23657 32.4195 9.06273 32.8392 9.06274 33.2768C9.06273 33.7144 9.23658 34.1341 9.54601 34.4435C9.85545 34.7529 10.2751 34.9268 10.7127 34.9268C11.1503 34.9268 11.57 34.7529 11.8795 34.4435L31.6765 14.6465L31.2347 30.5108C31.2238 30.7302 31.2569 30.9495 31.3319 31.1559C31.4069 31.3623 31.5224 31.5516 31.6715 31.7128C31.8207 31.874 32.0005 32.0038 32.2004 32.0946C32.4004 32.1854 32.6165 32.2354 32.836 32.2416C33.0555 32.2478 33.2741 32.2102 33.4788 32.1308C33.6836 32.0515 33.8705 31.932 34.0285 31.7795C34.1865 31.627 34.3125 31.4445 34.3991 31.2427C34.4856 31.0409 34.531 30.8238 34.5326 30.6042L35.074 11.1774C35.0883 10.695 34.9428 10.2214 34.6602 9.83023C34.5284 9.62552 34.3531 9.45237 34.1468 9.3231C33.7588 9.04701 33.2912 8.905 32.8152 8.91863L13.3884 9.45999Z" fill="#75808A" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_249_232">
-                                            <rect width="44" height="44" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div className={`card-diagonal mobile-accordion-elements`}>
-                            <img src={("./images/card-diagonal.png")} alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className="section-wrapper inner-section inner-section-padding card-comparator">
                 <div className="listed-card-wrapper">
                     <div className="text-container">
@@ -135,43 +22,37 @@ export function CardComparator() {
                         </span>
                     </div>
 
-                    <div className="listed-card card-services-details flex flex-col align-center" onClick={() => setAccordion1(!accordion1)}>
+                    <div className="listed-card card-services-details flex flex-col align-center">
                         <div className="card-services-details flex align-center w-100 justify-between">
                             <div className="card-color-selector flex item-center">
                                 <SelectorSVG color={"#0E0E0E"} />
                                 <div className="bold ml-15 paragraph flex justify-between align-center w-100">
                                     <span>Tapin classic Noir</span>
-                                    <span className={`link-icon mobile-accordion-btn ${accordion1 ? "closed" : "open"}`} >
-                                        <DropdownArrowIcon />
-                                    </span>
                                 </div>
                             </div>
                             <div className={`card-composition mobile-accordion-elements card-hidden-elements`}>
                                 <p className="text-third mb-10">Matière</p>
                                 <p className="paragraph">PVC</p>
                             </div>
-                            <div className={`out-link mobile-accordion-elements card-hidden-elements`}>
-                                <div className={`link-icon ${accordion1 ? "closed" : "open"}`}>
+                            <div className={`out-link mobile-accordion-elements`}>
+                                <div className={`link-icon ${accordion1 ? "closed" : "open"}`} onClick={() => setAccordion1(!accordion1)}>
                                     <DropdownArrowIcon />
                                 </div>
                             </div>
                             <div className={`card-diagonal mobile-accordion-elements card-hidden-elements`}>
-                                <img src={("./images/card-diagonal-blue.png")} alt="" />
+                                {!accordion1 ? <img src={("./images/card-diagonal-blue.png")} alt="" /> : <></>}
                             </div>
                         </div>
 
                         {accordion1 ? <DropdownElements image={"./images/classic-cards/Group 5.png"} /> : <></>}
                     </div>
-                    <div className="listed-card card-services-details flex align-center flex-col" onClick={() => setAccordion2(!accordion2)}>
+                    <div className="listed-card card-services-details flex align-center flex-col">
                         <div className="card-services-details flex align-center w-100 justify-between">
 
                             <div className="card-color-selector flex item-center">
                                 <SelectorSVG color={"#5E67B4"} />
                                 <div className="bold ml-15 paragraph flex justify-between align-center w-100">
                                     <span>Tapin classic Bleu</span>
-                                    <span className={`link-icon mobile-accordion-btn ${accordion2 ? "closed" : "open"}`}>
-                                        <DropdownArrowIcon />
-                                    </span>
                                 </div>
                             </div>
                             <div className={`card-composition mobile-accordion-elements card-hidden-elements`}>
@@ -179,27 +60,24 @@ export function CardComparator() {
                                 <p className="paragraph">PVC</p>
                             </div>
 
-                            <div className={`out-link mobile-accordion-elements card-hidden-elements`}>
-                                <div className={`link-icon ${accordion2 ? "closed" : "open"}`}>
+                            <div className={`out-link mobile-accordion-elements`}>
+                                <div className={`link-icon ${accordion2 ? "closed" : "open"}`} onClick={() => setAccordion2(!accordion2)}>
                                     <DropdownArrowIcon />
                                 </div>
                             </div>
                             <div className={`card-diagonal mobile-accordion-elements card-hidden-elements`}>
-                                <img src={("/images/card-diagonal-blue.png")} alt="" />
+                                {!accordion2 ? <img src={("/images/card-diagonal-blue.png")} alt="" /> : <></>}
                             </div>
 
                         </div>
                         {accordion2 ? <DropdownElements image={"/images/classic-cards/Group 5.png"} /> : <></>}
                     </div>
-                    <div className="listed-card card-services-details flex align-center flex-col" onClick={() => setAccordion3(!accordion3)}>
+                    <div className="listed-card card-services-details flex align-center flex-col">
                         <div className="card-services-details flex align-center w-100 justify-between">
                             <div className="card-color-selector flex item-center">
                                 <SelectorSVG color={"#B48E56"} />
                                 <div className="bold ml-15 paragraph flex justify-between align-center w-100">
                                     <span>Tapin classic Blanc</span>
-                                    <span className={`link-icon mobile-accordion-btn ${accordion3 ? "closed" : "open"}`}>
-                                        <DropdownArrowIcon />
-                                    </span>
                                 </div>
                             </div>
                             <div className={`card-composition mobile-accordion-elements card-hidden-elements`}>
@@ -207,14 +85,14 @@ export function CardComparator() {
                                 <p className="paragraph">PVC</p>
                             </div>
 
-                            <div className={`out-link mobile-accordion-elements card-hidden-elements`}>
-                                <div className={`link-icon ${accordion3 ? "closed" : "open"}`}>
+                            <div className={`out-link mobile-accordion-elements`}>
+                                <div className={`link-icon ${accordion3 ? "closed" : "open"}`} onClick={() => setAccordion3(!accordion3)}>
                                     <DropdownArrowIcon />
                                 </div>
                             </div>
 
                             <div className={`card-diagonal mobile-accordion-elements card-hidden-elements`}>
-                                <img src={("./images/card-diagonal.png")} alt="" />
+                                {!accordion3 ? <img src={("./images/card-diagonal.png")} alt="" /> : <></>}
                             </div>
                         </div>
                         {accordion3 ? <DropdownElements image={"./images/classic-cards/Group 2.png"} /> : <></>}
@@ -319,6 +197,7 @@ function DropdownElements({ image }) {
                                 <span className="bold">Model No:</span>
                                 <span className="paragraph">ZAE054</span>
                             </div>
+                            <Link href="#" className="btn black-btn mb-30 card-hidden-elements">Découvrir</Link>
                         </div>
                         <div className={`card-feature-box flex mb-30`}>
                             <CardFeatureElements />
@@ -327,13 +206,13 @@ function DropdownElements({ image }) {
 
                 </div>
                 <div className={`card-example-preview h-100 flex mt-3`}>
-                    <div className={`out-link flex justify-center`}>
-                        <div className="link-icon w-100 flex items-center">
+                    <div className={`out-link flex justify-center mx-auto`}>
+                        {/* <div className="link-icon w-100 flex items-center">
                             <div>
                                 <Arrow />
                             </div>
-                            <div className='out-link-btn-text ml-15 main-paragraph'>Lorem Ipsum</div>
-                        </div>
+                        </div> */}
+                        <Link href={"#"} className='btn black-btn out-link-btn-text'>Découvrir</Link>
                     </div>
                     <div className="w-100 h-100 flex justify-center items-center">
                         <img

@@ -4,7 +4,7 @@ import React from 'react'
 export default function Home() {
     return (
         <>
-            
+
             <div className="section text-white bg-img-section home-hero">
                 <Navbar />
                 <div className="max-x-pad section-container">
@@ -16,7 +16,7 @@ export default function Home() {
                             Pour ceux qui veulent bien plus qu’une simple carte de visite, il
                             y’a TAP’IN
                         </p>
-                        <a href="#" className="btn white-btn">Découvrir</a>
+                        <Link href="#" className="btn white-btn">Découvrir</Link>
                     </div>
                     {/* <div className="full-img-illustrator">
                       <img src="./images/bg1.png" alt="" />
@@ -170,7 +170,7 @@ export default function Home() {
                             <p className="main-paragraph dark-font  w-80">
                                 Ce modèle vous intéeresse? personnalisez-le davantage
                             </p>
-                            <a href="" className="btn secondary-btn">Personnaliser</a>
+                            <Link href="" className="btn secondary-btn">Personnaliser</Link>
                         </div>
 
                     </div>
@@ -198,8 +198,8 @@ export default function Home() {
                             </p>
 
                             <div className="btn-wrapper mt-3">
-                                <a href="" className="btn secondary-btn">Commander</a>
-                                <a href="" className="btn light-btn">Demander un devis pro</a>
+                                <Link href="" className="btn secondary-btn">Commander</Link>
+                                <Link href="" className="btn light-btn">Demander un devis pro</Link>
                             </div>
 
                         </div>
@@ -253,8 +253,8 @@ export default function Home() {
                 </div>
 
                 <div className="max-y-pad btn-group">
-                    <a href="" className="btn secondary-btn"
-                    >Politique de confidentialitées</a>
+                    <Link href="" className="btn secondary-btn"
+                    >Politique de confidentialitées</Link>
                 </div>
             </div>
         </>

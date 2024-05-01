@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar'
 import { PopForm, PopVideo } from '@/components/popups'
 import React, { useState } from 'react'
+import Link from 'next/link'
 import { createPortal } from 'react-dom'
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -143,8 +144,8 @@ export default function Demo() {
                     </div>
 
                     <div className="btn-wrapper mt-3">
-                        <a href="#" onClick={openVideo} className="btn secondary-btn">Voir la video de demo</a>
-                        <a href="#" onClick={openForm} className="btn light-btn">Demander une demo personnalisée</a>
+                        <Link href="#" onClick={openVideo} className="btn secondary-btn">Voir la video de demo</Link>
+                        <Link href="#" onClick={openForm} className="btn light-btn">Demander une demo personnalisée</Link>
                     </div>
                 </div>
             </div>

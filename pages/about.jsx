@@ -1,4 +1,5 @@
 import Navbar from '@/components/navbar'
+import Link from 'next/link'
 import React from 'react'
 
 export default function About() {
@@ -20,7 +21,7 @@ export default function About() {
                               <p className="main-paragraph text-center">
                                   Explorez une nouvelle dimension d'interactions professionnelles, conçue pour simplifier et amplifier vos opportunités de connexion
                               </p>
-                              <a href="" className="btn black-btn">Notre misson</a>
+                              <Link href="" className="btn black-btn">Notre misson</Link>
                           </div>
                       </div>
 
@@ -38,8 +39,8 @@ export default function About() {
                               conçue pour simplifier et
                           </h2>
                           <div className="btn-wrapper">
-                              <a href="" className="btn black-btn">Vision</a>
-                              <a href="#" className="btn light-btn">Mission</a>
+                              <Link href="" className="btn black-btn">Vision</Link>
+                              <Link href="#" className="btn light-btn">Mission</Link>
                           </div>
                       </div>
 
@@ -157,7 +158,7 @@ export default function About() {
                           </div>
 
                           <div className="choice-links flex">
-                              <a href="#" className="btn black-btn">Lorem Ipsum</a>
+                              <Link href="#" className="btn black-btn">Lorem Ipsum</Link>
                           </div>
 
                       </div>

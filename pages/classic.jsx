@@ -1,5 +1,6 @@
 import { CardComparator } from '@/components/cardComparator'
 import Navbar from '@/components/navbar'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 export default function Classic() {
@@ -19,7 +20,7 @@ export default function Classic() {
                             Pour ceux qui veulent bien plus qu’une simple carte de visite, il
                             y’a TAP’IN
                         </p>
-                        <a href="#" className="btn black-btn">Découvrir</a>
+                        <Link href="#" className="btn black-btn">Découvrir</Link>
                     </div>
                 </div>
             </div>
@@ -222,9 +223,9 @@ export default function Classic() {
                     </div>
 
                     <div className="choice-links flex">
-                        <a href="#" className="link selected">Lorem Ipsum</a>
-                        <a href="#" className="link">Lorem Ipsum</a>
-                        <a href="#" className="link">Lorem Ipsum</a>
+                        <Link href="#" className="link selected">Lorem Ipsum</Link>
+                        <Link href="#" className="link">Lorem Ipsum</Link>
+                        <Link href="#" className="link">Lorem Ipsum</Link>
                     </div>
 
                 </div>
@@ -307,7 +308,7 @@ export default function Classic() {
                     <img src={("./images/classic-cards/image 78.png")} className="" alt="" />
                 </div>
                 <div className="flex justify-center">
-                    <a href="#" className="discoverLink">Découvrir</a>
+                    <Link href="#" className="discoverLink">Découvrir</Link>
                 </div>
             </div>
 

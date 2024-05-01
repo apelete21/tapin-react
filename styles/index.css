@@ -172,6 +172,10 @@ h3.active-card-title {
   margin-inline: -70px;
 }
 
+.mx-auto {
+  margin-inline: auto;
+}
+
 .padding-top-100 {
   padding-top: 100px;
 }
@@ -739,8 +743,9 @@ nav .nav-link {
 }
 
 .card-example-preview {
-  column-gap: 30%;
-  width: 80%;
+    column-gap: 0;
+    width: 50%;
+    max-width: 400px;
 }
 
 .card-example-preview .link-icon {
