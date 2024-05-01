@@ -1,14 +1,10 @@
 import { CardComparator } from '@/components/cardComparator'
 import Navbar from '@/components/navbar'
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
 
 export default function Pro() {
-    const [accordion1, setAccordion1] = useState(true)
-    const [accordion2, setAccordion2] = useState(true)
-    const [accordion3, setAccordion3] = useState(true)
-
     return (
         <>
             <div className="section bg linkaard-pro-intro h-screen home-intro">
