@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import "@/styles/index.css";
 import { useRouter } from "next/router";
+import {} from "next";
 
 export default function App({ Component, pageProps }) {
   const { pathname } = useRouter();
@@ -8,7 +9,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      {pathname !== ("/login") ? <Footer /> : <></>}
+      {pathname !== "/login" && pathname !== "/register" ? <Footer /> : <></>}
     </>
   );
 }

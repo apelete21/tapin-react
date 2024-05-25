@@ -16,7 +16,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "poppins", sans-serif;
+  font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
   /* border: solid red; */
 }
@@ -669,10 +669,10 @@ nav .nav-link {
   margin-top: 20px;
 }
 .listed-card-wrapper .listed-card.dropdown-elements {
-    margin-inline: 0vw;
-    padding: 0;
-    margin: 0px;
-  }
+  margin-inline: 0vw;
+  padding: 0;
+  margin: 0px;
+}
 .card-feature-box {
 }
 
@@ -743,9 +743,9 @@ nav .nav-link {
 }
 
 .card-example-preview {
-    column-gap: 0;
-    width: 50%;
-    max-width: 400px;
+  column-gap: 0;
+  width: 50%;
+  max-width: 400px;
 }
 
 .card-example-preview .link-icon {
@@ -1848,7 +1848,7 @@ input:focus {
 
 /* Footer */
 
-/* Login page design */
+/* Login & register page design */
 
 .login-bg-image {
   background-image: url(../images/morefunc-bg.png);
@@ -1858,8 +1858,18 @@ input:focus {
   align-items: center;
 }
 
-.login-page {
-  padding-block: 5vh;
+.login-page,
+.register-page {
+  padding-block: 4vh;
+}
+
+.register-page .register-nav-bar {
+  /* flex-wrap: wrap; */
+}
+
+.register-page .register-nav-bar .navlink {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .user-form-container {
@@ -1870,19 +1880,42 @@ input:focus {
   margin-block: 4vh;
   border-radius: 20px;
 }
+.register-form-container {
+  /* width: 100%; */
+  background: white;
+  padding: 30px;
+  margin-block: 4vh;
+  border-radius: 20px;
+}
 
-.user-form-container .user-form {
+.register-form-container .user-form {
+  max-width: 870px;
+  column-gap: 2%;
 }
 
 .user-form .form-title {
   margin-bottom: 20%;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 900 !important;
 }
 
 .user-form .form-subtitle {
   font-weight: 500;
   font-size: 1.4rem;
+}
+
+.register-form-container .user-form .form-subtitle {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.confidentiality-paragraph .main-paragraph a {
+  text-decoration: underline;
+}
+
+.confidentiality-paragraph {
+  margin-block: 20px;
 }
 
 .user-form .form-input-element-container {
@@ -1897,6 +1930,18 @@ input:focus {
   margin-block: 8px;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-full {
+  flex: 1 0 100%;
+}
+
+.flex-half {
+  flex: 1 0 48%;
+}
+
 .user-form .passwd-retrieve-link {
   font-size: smaller;
   text-align: center;
@@ -1904,13 +1949,24 @@ input:focus {
   color: #6146f2;
 }
 
+.register-form-container .form-input-element-container .form-submit-element {
+  border-radius: 100px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 210px;
+  border: none;
+  margin: 8px auto;
+  font-size: medium;
+  cursor: pointer;
+}
+
 .form-input-element-container .form-submit-element {
   border-radius: 100px;
   padding: 15px 20px;
   width: 100%;
   border: none;
-  margin-block: 8px;
-  font-size: medium;
+  margin: 8px auto;
+  /* font-size: normal; */
   cursor: pointer;
 }
 
@@ -1943,22 +1999,28 @@ input:focus {
   margin-block: 25px;
 }
 
-.go-register-btn-container {
-  padding: 9px;
+.login-page .go-register-btn-container {
   border-radius: 100px;
+  padding: 10px;
   border: 1px solid var(--gray-light-100);
-  font-size: smaller;
+}
+
+.register-page .go-register-btn-container {
 }
 
 .go-register-btn-container > * {
   padding: 10px 20px;
 }
 
+.register-form-container .go-register-btn-container .go-register-btn {
+  padding: 20px 30px;
+}
+
 .go-register-btn-container .go-register-btn {
   border-radius: 100px;
 }
 
-/* Login page design */
+/* Login & registaer page design */
 
 @media only screen and (max-width: 1280px) {
   .pro-cards-use-display > div {
@@ -2012,7 +2074,8 @@ input:focus {
     width: 100%;
   }
 
-  .dropdown-elements .out-link, .dropdown-elements .link-icon {
+  .dropdown-elements .out-link,
+  .dropdown-elements .link-icon {
     width: fit-content !important;
     padding-inline: 3vw;
   }
@@ -2755,6 +2818,19 @@ input:focus {
     border-bottom-right-radius: 50px;
   }
 
+  .register-page .go-register-btn-container .go-register-text {
+    display: none;
+  }
+  .register-form-container {
+    /* width: 100%; */
+    background: white;
+    padding: 10px;
+    margin-block: 4vh;
+    border-radius: 20px;
+  }
+  .flex-half {
+    flex: 1 1 100%;
+  }
   .quotation-wrapper .card-head {
     justify-content: space-between;
   }
