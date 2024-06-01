@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "cooper bold";
+  src: url("/fonts/cooperb.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "cooper black";
+  src: url("/fonts/coopla.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "cooper light";
+  src: url("/fonts/cooperl.ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "cooper medium";
+  src: url("/fonts/cooperm.ttf");
+  font-weight: medium;
+}

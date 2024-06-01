@@ -440,6 +440,7 @@ nav .nav-link {
 
 .text-head {
   font-size: 3.875rem;
+  font-family: "cooper black";
   font-weight: 900;
   letter-spacing: -0.17rem;
   line-height: 4.25rem;
@@ -1361,6 +1362,7 @@ nav .nav-link {
 
 .sharing-methods-wrapper h3 {
   font-size: 2.2rem;
+  font-family: "cooper medium";
   margin-bottom: 10px;
 }
 

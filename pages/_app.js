@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import "@/styles/index.css";
+import "@/styles/fonts.css";
 import { useRouter } from "next/router";
 import {} from "next";
 
