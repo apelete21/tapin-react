@@ -1,7 +1,7 @@
 @font-face {
   font-family: "cooper bold";
   src: url("/fonts/cooperb.ttf");
-  font-weight: bold;
+  font-weight: 700;
 }
 @font-face {
   font-family: "cooper black";
@@ -16,5 +16,5 @@
 @font-face {
   font-family: "cooper medium";
   src: url("/fonts/cooperm.ttf");
-  font-weight: medium;
+  font-weight: 500;
 }

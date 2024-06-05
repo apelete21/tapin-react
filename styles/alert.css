@@ -1,0 +1,77 @@
+.alert-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.alert-box {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    text-align: center;
+}
+
+.alert-box span {
+    display: block;
+    font-size: larger;
+    /* font-family: "cooper medium"; */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.alert-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+    padding-block: 60px;
+}
+
+.alert-svg svg {
+    height: 70px;
+}
+
+.alert-btn {
+    width: 100%;
+    color: gray;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-block: 10px;
+    font-size: large;
+    transition: .18s linear;
+    cursor: pointer;
+}
+
+.alert-btn:hover {
+    opacity: .7;
+}
+
+.loading-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.loading-alert div {
+    height: 150px;
+}

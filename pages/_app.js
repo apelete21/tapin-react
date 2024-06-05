@@ -1,6 +1,7 @@
-import Footer from "@/components/footer";
 import "@/styles/index.css";
 import "@/styles/fonts.css";
+import "@/styles/alert.css";
+import Footer from "@/components/footer";
 import { useRouter } from "next/router";
 import {} from "next";
 
