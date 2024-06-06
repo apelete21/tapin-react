@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      {pathname !== "/login" && pathname !== "/register" ? <Footer /> : <></>}
+      {pathname !== "/login" && pathname !== "/register" && pathname !== "/redirect" ? <Footer /> : <></>}
     </>
   );
 }

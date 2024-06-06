@@ -40,7 +40,7 @@ export default function Register() {
             body: bodyContent,
             headers: headersList,
         })
-        const { status, email } = await response.json()
+        const { status } = await response.json()
         if (status === 200) {
             setAlertData({
                 message: {
@@ -103,10 +103,10 @@ export default function Register() {
                             <InputField type="tel" className="" placeholder='Telephone' value={phone} setValue={setPhone} />
                         </div>
                         <div className="form-input-element-container flex-half">
-                            <InputField type="password" className="" placeholder='TestLinkaard' value={password} setValue={setPassword} />
+                            <InputField type="password" className="" placeholder='password' value={password} setValue={setPassword} />
                         </div>
                         <div className="form-input-element-container flex-half">
-                            <InputField type="password" className="" placeholder='TestLinkaard' value={confirmPwd} setValue={setConfirmPwd} />
+                            <InputField type="password" className="" placeholder='Confirm password' value={confirmPwd} setValue={setConfirmPwd} />
                         </div>
                         <div className="confidentiality-paragraph flex-full text-center">
                             <p className='main-paragraph'>En vous inscrivant, vous acceptez de vous conformer à la <Link href={"/"}>politique de confidentialité</Link> et aux <Link href={"/"}>conditions générales</Link> de TAPIN</p>
