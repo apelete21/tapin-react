@@ -21,6 +21,7 @@ export default async function handler(req, res) {
   });
 
   let data = await response.json();
+  console.log(data)
   res.send({
     status: data.status,
     redirect_link:

@@ -54,7 +54,7 @@ export default function Login() {
             return            
         }
         setLoading(false)
-        router.push(`/redirect?l=${redirect_link}`)
+        router.push(`/redirect?url=${redirect_link}`)
     }
 
     const close = () => {

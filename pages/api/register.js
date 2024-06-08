@@ -1,13 +1,18 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
+import { UserContext } from "@/contexts/User";
+import { useContext } from "react";
+
 export default async function handler(req, res) {
   const { firstName, email, lastName, org, password, phone } = req.body;
+
+  const { setUserdata } = useContext(UserContext);
 
   const headersList = {
     Accept: "*/*",
     "User-Agent": "TAPIN (https://www.tapin.com)",
     "Content-Type": "application/json",
-  }; 
+  };
 
   let bodyContent = JSON.stringify({
     email: email,
@@ -26,6 +31,7 @@ export default async function handler(req, res) {
   });
 
   let data = await response.json();
+  setUserdata(data.data)
   res.send({ status: data.status, email: data?.data.email });
   console.log(data);
 }

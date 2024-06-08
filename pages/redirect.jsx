@@ -1,13 +1,18 @@
-import { useRouter } from 'next/router'
+import Head from 'next/head'
+import { useSearchParams } from 'next/navigation'
 import React from 'react'
 
 export default function Redirect() {
-    const router = useRouter()
-    const { l } = router.query
-    window.location = l
+    const params = useSearchParams()
+    const url = params.get("url")
     return (
-        <div>
-            Please wait while redirecting...
-        </div>
+        <>
+            <Head>
+                <meta http-equiv="refresh" content={`0;URL=${url}`} />
+            </Head>
+            <div>
+                <a href={url}>Click here</a> if it does not redirect automatically...
+            </div>
+        </>
     )
 }
