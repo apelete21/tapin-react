@@ -40,7 +40,6 @@ export default function Login() {
             headers: headersList,
         })
         const { status, redirect_link } = await response.json()
-        console.log(redirect_link)
         if (status !== 200) {
             setAlertData({
                 message: {
