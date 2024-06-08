@@ -12,13 +12,6 @@ export default function Login() {
 
     const [loading, setLoading] = useState(false)
     const [alert, setAlert] = useState(false)
-    const [alertData, setAlertData] = useState({
-        message: {
-            title: "",
-            text: "",
-        },
-        status: "none"
-    })
 
     const bodyContent = JSON.stringify({
         password, phone
@@ -41,16 +34,9 @@ export default function Login() {
         })
         const { status, redirect_link } = await response.json()
         if (status !== 200) {
-            setAlertData({
-                message: {
-                    title: "Echec",
-                    text: `Veuillez verifier si le formulaire est bien rempli avec les bonnes coordonnées.`
-                },
-                status: "error"
-            })
             setAlert(true)
             setLoading(false)
-            return            
+            return
         }
         setLoading(false)
         router.push(`/redirect?url=${redirect_link}`)
@@ -63,7 +49,6 @@ export default function Login() {
     return (
         <>
             {loading ? <div className='loading-alert'><div>loading...</div></div> : <></>}
-            {alert ? <Alert message={alertData.message} close={close} status={alertData.status} /> : <></>}
             <div className='login-page w-screen h-screen bg-img-section login-bg-image max-x-pad'>
                 <div className="user-form-container">
                     <form className="user-form" onSubmit={loginUser}>
@@ -79,6 +64,10 @@ export default function Login() {
                         <div className="form-input-element-container">
                             <InputField type="password" className="" placeholder='TestLinkaard' value={password} setValue={setPassword} />
                         </div>
+                        { alert ? <div style={{
+                            color: "red",
+                            fontSize: ".75rem"
+                        }}>Une erreur est survenue, verifiez les données puis réessayer!</div> : ""}
                         <div className="passwd-retrieve-link">
                             <Link href={"#"}>
                                 Mot de passe oublié ?
