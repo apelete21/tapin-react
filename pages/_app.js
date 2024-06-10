@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
       {pathname !== "/login" &&
       pathname !== "/register" &&
       pathname !== "/redirect" &&
-      !pathname.startsWith("/user") ? (
+      !pathname.startsWith("/bio") ? (
         <Footer />
       ) : (
         <></>
