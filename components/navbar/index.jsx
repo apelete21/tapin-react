@@ -18,7 +18,9 @@ export default function Navbar() {
                 <div className="navbar-wrapper">
                     <div className="navbar-links-group">
                         <div className='link_menu flex'>
-                            <Link href="/" className="nav-logo">TAPIN</Link>
+                            <Link href="/" className="nav-logo">
+                                <img src="/logo.png" alt="Linkaard logo" />
+                            </Link>
                             <span onClick={() => setLinks(!links)} className='menu_btn' style={{ cursor: "pointer" }}>{!links ? "=" : "x"}</span>
                         </div>
                         <div className={`nav-links`}>
@@ -49,8 +51,8 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className="navbar-btn-group">
-                        <Link href="#" className={`nav-link ${links ? "flex" : "mobile-nav-hidden-el"}`}>Commander</Link>
-                        <Link href="/login" className={`nav-link btn secondary-btn ${links ? "flex" : "mobile-nav-hidden-el"}`}>Connexion</Link>
+                        <Link href="/api/command" className={`nav-link ${links ? "flex" : "mobile-nav-hidden-el"}`}>Commander</Link>
+                        <Link href="/api/login" className={`nav-link btn secondary-btn ${links ? "flex" : "mobile-nav-hidden-el"}`}>Connexion</Link>
                     </div>
                 </div>
                 {dropdown ?

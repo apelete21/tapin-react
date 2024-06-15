@@ -1,13 +1,13 @@
 :root {
-  --green: #1ED860;
-  --green-bg: #F0FCF4;
-  --green-icon-bg: #1ED86015;
-  --blue: #0067FF;
-  --blue-bg: #F0F6FF;
-  --blue-icon-bg: #0067FF15;
-  --orange: #FA6317;
-  --orange-bg: #F6F2E8;
-  --orange-icon-bg: #FA631715;
+  --green: #1ed860;
+  --green-bg: #f0fcf4;
+  --green-icon-bg: #1ed86015;
+  --blue: #0067ff;
+  --blue-bg: #f0f6ff;
+  --blue-icon-bg: #0067ff15;
+  --orange: #fa6317;
+  --orange-bg: #f6f2e8;
+  --orange-icon-bg: #fa631715;
   --gray: #00000094;
 }
 
@@ -59,6 +59,13 @@
   border-radius: 25px;
 }
 
+@media only screen and (max-width: 650px) {
+  .page-base {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
 .container {
   z-index: 2;
   margin-top: -25px;
@@ -75,7 +82,7 @@
   flex-direction: column;
 }
 
-.-orange.container{
+.-orange.container {
   background-color: var(--orange-bg);
 }
 
@@ -129,17 +136,23 @@
   gap: 10px;
 }
 
-.user-phone, .user-webpage, .user-email {
+.user-phone,
+.user-webpage,
+.user-email {
   padding: 5px 5px 5px 15px;
   background-color: white;
   border-radius: 14px;
 }
 
-.phone-title, .webpage-title, .email-title {
+.phone-title,
+.webpage-title,
+.email-title {
   font-weight: bold;
 }
 
-.phone, .webpage, .email {
+.phone,
+.webpage,
+.email {
   color: var(--gray);
   font-size: 1.125rem;
 }

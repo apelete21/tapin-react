@@ -269,9 +269,10 @@ nav .nav-bg-white.dropdown {
 }
 
 nav .nav-logo {
-  font-size: 40px;
-  font-weight: 900;
-  margin-right: 30px;
+  max-width: 225px;
+  height: 100%;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 .nav-links {
   display: flex;
