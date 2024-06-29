@@ -51,7 +51,7 @@
 }
 
 .page-base {
-  max-width: 350px;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -69,7 +69,7 @@
 .container {
   z-index: 2;
   margin-top: -25px;
-  padding-inline: 5vw;
+  padding-inline: 1.5vw;
   position: relative;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
